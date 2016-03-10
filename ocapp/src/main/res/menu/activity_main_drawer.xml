@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<group android:checkableBehavior="single"
+		>
+		<item
+			android:id="@+id/nav_find"
+			android:icon="@mipmap/icon_nav_find"
+			android:title="@string/nav_menu_item_find"/>
+		<item
+			android:id="@+id/nav_day"
+			android:icon="@mipmap/icon_nav_day"
+			android:title="@string/nav_menu_item_day"/>
+		<item
+			android:id="@+id/nav_category"
+			android:icon="@mipmap/icon_nav_cate"
+			android:title="@string/nav_menu_item_category"/>
+		<item
+			android:id="@+id/nav_person"
+			android:icon="@mipmap/icon_nav_person"
+			android:title="@string/nav_menu_item_person"/>
+		<item
+			android:id="@+id/nav_setting"
+			android:icon="@mipmap/icon_nav_setting"
+			android:title="@string/nav_menu_item_setting"/>
+	</group>
+
+
+</menu>

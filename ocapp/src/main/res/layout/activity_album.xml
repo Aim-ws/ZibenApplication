@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:detail="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/white"
+
+	>
+
+	<android.support.design.widget.AppBarLayout
+		android:id="@+id/appbar_layout"
+		android:layout_width="match_parent"
+		android:layout_height="350dp"
+		android:background="@color/colorAppbar"
+		android:fitsSystemWindows="true"
+		android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+		<android.support.design.widget.CollapsingToolbarLayout
+			android:id="@+id/collapsing_toolbar_layout"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:fitsSystemWindows="true"
+			detail:contentScrim="?attr/colorPrimary"
+			detail:expandedTitleMarginEnd="64dp"
+			detail:expandedTitleMarginStart="48dp"
+			detail:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+
+			<ImageView
+				android:id="@+id/back_icon"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:fitsSystemWindows="true"
+				android:scaleType="centerCrop"
+				detail:layout_collapseMode="parallax"
+				detail:layout_collapseParallaxMultiplier="0.7"
+			    android:src="@mipmap/defaults_pic"
+				/>
+
+			<android.support.v7.widget.Toolbar
+				android:id="@+id/toolbar"
+				android:layout_width="match_parent"
+				android:layout_height="?attr/actionBarSize"
+				android:background="@color/colorAppbar"
+				android:layoutMode="clipBounds"
+				detail:layout_collapseMode="pin"
+				detail:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+				>
+
+			</android.support.v7.widget.Toolbar>
+		</android.support.design.widget.CollapsingToolbarLayout>
+	</android.support.design.widget.AppBarLayout>
+
+	<com.ziben365.ocapp.widget.refresh.recycler.RefreshRecyclerView
+		android:id="@+id/id_refresh_recyclerView"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:fillViewport="true"
+		detail:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+</android.support.design.widget.CoordinatorLayout>

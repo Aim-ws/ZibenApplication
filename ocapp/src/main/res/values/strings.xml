@@ -1,0 +1,166 @@
+<resources>
+	<string name="app_name">独角兽</string>
+
+	<string name="navigation_drawer_open">Open navigation drawer</string>
+	<string name="navigation_drawer_close">Close navigation drawer</string>
+
+	<string name="action_settings">Settings</string>
+
+	<string name="share">share</string>
+
+	<string name="listview_header_hint_normal">下拉刷新</string>
+	<string name="listview_header_hint_release">释放立即刷新</string>
+	<string name="listview_loading">正在加载...</string>
+	<string name="nomore_loading">没有了</string>
+	<string name="refreshing">正在刷新...</string>
+	<string name="refresh_done">刷新完成</string>
+	<string name="listview_header_last_time">上次更新时间：</string>
+	
+	
+	<string name="nav_menu_item_find">发现项目</string>
+	<string name="nav_menu_item_day">每日精选</string>
+	<string name="nav_menu_item_category">精选分类</string>
+	<string name="nav_menu_item_person">个人中心</string>
+	<string name="nav_menu_item_setting">设置</string>
+	
+	<string name="header_scrolling_view_behavior">com.ziben365.ocapp.widget.FollowBehavior</string>
+
+
+
+	<string name="pull_to_refresh">下拉刷新</string>
+	<string name="pull_to_refresh_from_bottom_pull_label">@string/pull_to_refresh_pull_label</string>
+	<string name="pull_to_refresh_from_bottom_refreshing_label">@string/pull_to_refresh_refreshing_label</string>
+	<string name="pull_to_refresh_from_bottom_release_label">@string/pull_to_refresh_release_label</string>
+	<string name="pull_to_refresh_pull_label">下拉刷新…</string>
+	<string name="pull_to_refresh_refreshing_label">正在载入…</string>
+	<string name="pull_to_refresh_release_label">放开以刷新…</string>
+
+	<string name="viewpager_indicator">%1$d/%2$d</string>
+
+	<string name="login_empty_username">请输入用户名</string>
+	<string name="login_error_username">您输入的手机号有误，请检查重新输入</string>
+	<string name="login_empty_password">请输入密码</string>
+
+	<string name="tab_1">精选</string>
+	<string name="tab_2">最新</string>
+	<string name="tab_3">合集</string>
+	<string name="tab_4">推友</string>
+	<string name="tab_5">榜单</string>
+
+	<string name="recommend_person_hint">推荐人说:</string>
+	<string name="rank_hint">本周排名</string>
+
+	<string name="search_hint">搜索</string>
+	<string name="search_all">大家都在搜索</string>
+	<string name="search_my">我的搜索记录</string>
+
+	<string name="clear">清空</string>
+
+	<string name="more">更多</string>
+	<string name="cancel">取消</string>
+	<string name="ok">确定</string>
+	<string name="save">保存</string>
+	<string name="complete">完成</string>
+
+	<string name="setting_1">编辑个人资料</string>
+	<string name="setting_2">消息推送</string>
+	<string name="setting_3">私信推送</string>
+	<string name="setting_4">评个分吧</string>
+	<string name="setting_5">意见反馈</string>
+	<string name="setting_6">清除缓存</string>
+	<string name="setting_7">关于我们</string>
+	<string name="setting_8">当前版本</string>
+	<string name="setting_9">退出登录</string>
+
+	<string name="login_title">登录</string>
+	<string name="login_username">请输入手机号</string>
+	<string name="login_password">请输入密码</string>
+
+	<string name="register_title">注册</string>
+	<string name="register_hint_1">请输入手机号</string>
+	<string name="register_hint_2">请输入验证码</string>
+	<string name="register_hint_3">6-16数字、字母组合</string>
+	<string name="register_send_yz_code">发送验证码</string>
+	<string name="register_agree">我已阅读并同意《用户使用条款几服务协议》</string>
+
+	<string name="p_dollar">金币</string>
+	<string name="p_praise_1">点赞</string>
+	<string name="p_like">收藏</string>
+	<string name="p_comment">评论</string>
+	<string name="p_share">分享</string>
+	<string name="p_recommend_word">推荐说:</string>
+	<string name="p_img_word">展示图:</string>
+	<string name="p_down">展开</string>
+	<string name="p_up">收回</string>
+	<string name="p_praise">点过赞的推友</string>
+	<string name="p_o_comment">精选评论</string>
+
+	<string name="release_project_title">推荐项目</string>
+	<string name="release_project_name">项目名称</string>
+	<string name="release_project_city">项目所在城市</string>
+	<string name="release_project_status">项目状态</string>
+	<string name="release_project_value">项目估值</string>
+	<string name="release_project_one_desc">项目一句话描述</string>
+	<string name="release_project_desc">项目概述</string>
+	<string name="release_project_add_image">项目效果图</string>
+	<string name="release_project_add_product">产品展示图</string>
+	<string name="release_project_reason">推荐理由:</string>
+	<string name="release_project_reason_1">填写推荐理由:</string>
+	<string name="release_project_reason_2">不少于30字</string>
+	<string name="release_project_reason_hint">回答越详细，越能体现价值哦！</string>
+	<string name="release_project_reason_hint_dialog">回答越详细，审核通过率越高！</string>
+	<string name="release_project_reason_hint_dialog_1">不少于15字</string>
+	<string name="release_project_reason_hint_dialog_2">不少于30字</string>
+
+
+
+	<string name="release_project_comment_publish">发布</string>
+	<string name="release_project_comment_title">发表评论</string>
+
+	<string name="tag_select_title">选择标签</string>
+	<string name="tag_select_hint">标签(选择1-6项)</string>
+
+	<string name="edit_profile_title">编辑个人资料</string>
+	<string name="edit_profile_logo">编辑头像</string>
+	<string name="edit_profile_nick">昵称</string>
+	<string name="edit_profile_name">真实姓名</string>
+	<string name="edit_profile_gender">性别</string>
+	<string name="edit_profile_city">所在城市</string>
+	<string name="edit_profile_mobile">电话号码</string>
+	<string name="edit_profile_email">常用邮箱</string>
+	<string name="edit_profile_register">注册时间</string>
+	<string name="edit_profile_unbind">未绑定</string>
+	<string name="edit_profile_unkonw">未知</string>
+
+	<string name="feedback_title">意见反馈</string>
+	<string name="feedback_submit">提交</string>
+
+	<string name="radio_gender_man">男</string>
+	<string name="radio_gender_woman">女</string>
+
+	<string name="dialog_pick_photo">拍照</string>
+	<string name="dialog_album_photo">从相册选择</string>
+	<string name="dialog_cancel">取消</string>
+
+
+	<string name="sign_title">签到</string>
+
+	<string name="tag_hint">Tag为大小写字母，数字，下划线,中文， 多个用以逗号分隔</string>
+	<string name="alias_hint">Alias为大小写字母，数字，下划线</string>
+	<string name="style_hint">style为数字</string>
+	<string name="error_style_empty">style不能为空</string>
+	<string name="error_alias_empty">alias不能为空</string>
+	<string name="error_tag_empty">tag不能为空</string>
+	<string name="error_tag_gs_empty">格式不对</string>
+	<string name="error_network">网络连接异常,初始化失败 请检查网络！</string>
+	<string name="logining">程序在后台执行, 请查看日志！</string>
+	<string name="setting_su">设置成功</string>
+
+	<string name="auth_cancel">授权操作已取消</string>
+	<string name="auth_error">授权操作遇到错误，请阅读Logcat输出; \n 如微信登录，需要微信客户端</string>
+	<string name="auth_complete">授权成功，正在跳转登录操作…</string>
+
+
+
+
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<item android:duration="200" android:drawable="@drawable/image_guide_3_1" />
+	<item android:duration="200" android:drawable="@drawable/image_guide_3_2" />
+	<item android:duration="200" android:drawable="@drawable/image_guide_3_3" />
+	<item android:duration="200" android:drawable="@drawable/image_guide_3_4" />
+	<item android:duration="200" android:drawable="@drawable/image_guide_3_5" />
+	<item android:duration="200" android:drawable="@drawable/image_guide_3_6" />
+	<item android:duration="200" android:drawable="@drawable/image_guide_3_7" />
+
+</animation-list>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ededed"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ededed"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/id_edit_user_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_margin_20"
+            android:background="@color/white"
+            android:drawableRight="@mipmap/icon_next"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/common_margin_12"
+            android:paddingLeft="@dimen/common_margin_20"
+            android:paddingRight="@dimen/common_margin_8"
+            android:paddingTop="@dimen/common_margin_12"
+            android:text="@string/setting_1"
+            android:textSize="@dimen/common_text_size_16" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingBottom="@dimen/common_margin_10"
+            android:paddingLeft="@dimen/common_margin_10"
+            android:paddingTop="@dimen/common_margin_10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/common_margin_10"
+                android:layout_marginRight="@dimen/common_margin_10"
+                android:text="@string/setting_2"
+                android:textSize="@dimen/common_text_size_16" />
+
+
+            <ToggleButton
+                android:id="@+id/id_toggle_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@android:color/transparent"
+                android:button="@drawable/selector_toggle_button"
+                android:checked="true"
+                android:gravity="center_horizontal"
+                android:text=""
+                android:textOff=""
+                android:textOn="" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingBottom="@dimen/common_margin_10"
+            android:paddingLeft="@dimen/common_margin_10"
+            android:paddingTop="@dimen/common_margin_10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/common_margin_10"
+                android:layout_marginRight="@dimen/common_margin_10"
+                android:text="@string/setting_3"
+                android:textSize="@dimen/common_text_size_16" />
+
+
+            <ToggleButton
+                android:id="@+id/id_toggle_letter_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@android:color/transparent"
+                android:button="@drawable/selector_toggle_button"
+                android:gravity="center_horizontal"
+                android:text=""
+                android:textOff=""
+                android:textOn="" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_margin_20"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/id_tv_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@mipmap/icon_next"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/common_margin_12"
+                android:paddingLeft="@dimen/common_margin_18"
+                android:paddingRight="@dimen/common_margin_8"
+                android:paddingTop="@dimen/common_margin_12"
+                android:text="@string/setting_4"
+                android:textSize="@dimen/common_text_size_16" />
+
+            <TextView
+                android:id="@+id/id_tv_feedback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@mipmap/icon_next"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/common_margin_12"
+                android:paddingLeft="@dimen/common_margin_18"
+                android:paddingRight="@dimen/common_margin_8"
+                android:paddingTop="@dimen/common_margin_12"
+                android:text="@string/setting_5"
+                android:textSize="@dimen/common_text_size_16" />
+
+            <TextView
+                android:id="@+id/id_tv_clear_cache"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@mipmap/icon_next"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/common_margin_12"
+                android:paddingLeft="@dimen/common_margin_18"
+                android:paddingRight="@dimen/common_margin_8"
+                android:paddingTop="@dimen/common_margin_12"
+                android:text="@string/setting_6"
+                android:textSize="@dimen/common_text_size_16" />
+
+            <TextView
+                android:id="@+id/id_tv_about_us"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@mipmap/icon_next"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/common_margin_12"
+                android:paddingLeft="@dimen/common_margin_18"
+                android:paddingRight="@dimen/common_margin_8"
+                android:paddingTop="@dimen/common_margin_12"
+                android:text="@string/setting_7"
+                android:textSize="@dimen/common_text_size_16" />
+
+            <TextView
+                android:id="@+id/id_tv_version"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@mipmap/icon_next"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/common_margin_12"
+                android:paddingLeft="@dimen/common_margin_18"
+                android:paddingRight="@dimen/common_margin_8"
+                android:paddingTop="@dimen/common_margin_12"
+                android:text="@string/setting_8"
+                android:textSize="@dimen/common_text_size_16" />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/id_tv_logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="@dimen/common_margin_20"
+            android:background="@color/white"
+            android:drawableRight="@mipmap/icon_next"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/common_margin_12"
+            android:paddingLeft="@dimen/common_margin_18"
+            android:paddingRight="@dimen/common_margin_8"
+            android:paddingTop="@dimen/common_margin_12"
+            android:text="@string/setting_9"
+            android:textSize="@dimen/common_text_size_16" />
+
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+
+	<com.ziben365.ocapp.widget.refresh.recycler.RefreshRecyclerView
+		android:id="@+id/id_refresh_recyclerView"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/white"
+		/>
+
+	<FrameLayout
+		android:id="@+id/id_empty"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+	    android:visibility="gone"
+		>
+
+
+		<LinearLayout
+			android:id="@+id/id_empty_1"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical"
+			android:gravity="center">
+
+
+			<TextView
+				android:id="@+id/id_hint"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColor="@color/color_text_89"
+				android:textSize="@dimen/common_text_size_16"
+				android:text="@string/app_name"
+				/>
+			<TextView
+				android:id="@+id/id_go_to"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/common_margin_10"
+				android:textColor="@color/white"
+				android:text="@string/app_name"
+				android:textSize="@dimen/common_text_size_16"
+				android:paddingTop="@dimen/common_margin_8"
+				android:paddingBottom="@dimen/common_margin_8"
+				android:paddingLeft="@dimen/common_text_size_20"
+				android:paddingRight="@dimen/common_text_size_20"
+				android:background="@drawable/shape_btn_feedback"/>
+
+		</LinearLayout>
+
+		<ImageView
+			android:id="@+id/id_empty_image"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:src="@mipmap/icon_empty_gold"
+			android:scaleType="centerCrop"/>
+
+	</FrameLayout>
+
+
+
+</FrameLayout>

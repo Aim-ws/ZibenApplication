@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/white"
+	android:orientation="vertical">
+
+	<com.ziben365.ocapp.widget.CircleImageView
+		android:id="@+id/id_p_logo"
+		android:layout_width="60dp"
+		android:layout_height="60dp"
+		android:layout_gravity="center_horizontal"
+		android:layout_marginTop="30dp"
+		android:src="@mipmap/defaults_pic"
+		android:scaleType="centerCrop"/>
+
+	<!--输入项目名称-->
+
+
+	<EditText
+		android:id="@+id/id_p_edit_name"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="40dp"
+		android:textSize="@dimen/common_margin_16"
+		android:paddingTop="@dimen/common_margin_20"
+		android:paddingBottom="@dimen/common_margin_5"
+		android:layout_marginLeft="@dimen/common_text_size_20"
+		android:layout_marginRight="@dimen/common_text_size_20"
+		android:singleLine="true"
+		android:hint="@string/release_project_name"
+	    android:textColor="@color/color_text_66"
+	    android:textColorHint="@color/color_text_99"
+	    android:gravity="center_vertical"
+	    android:background="@android:color/transparent"
+		/>
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="0.5dp"
+		android:background="#40000000"
+	    android:layout_marginLeft="@dimen/common_text_size_20"
+	    android:layout_marginRight="@dimen/common_text_size_20"
+		/>
+
+	<!--选择城市-->
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="@dimen/common_margin_20"
+		android:layout_marginRight="@dimen/common_margin_20"
+		android:orientation="vertical">
+
+		<EditText
+			android:id="@+id/id_p_edit_city"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textSize="@dimen/common_text_size_16"
+			android:paddingRight="@dimen/common_margin_5"
+			android:paddingBottom="@dimen/common_margin_5"
+			android:paddingTop="@dimen/common_margin_15"
+			android:drawableRight="@mipmap/icon_p_add_addres"
+			android:textColor="@color/color_text_66"
+			android:textColorHint="@color/color_text_99"
+			android:hint="@string/release_project_city"
+		    android:gravity="center_vertical"
+		    android:background="@android:color/transparent"
+		    android:editable="false"
+		    android:inputType="none"
+			/>
+
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="0.5dp"
+			android:background="#40000000"
+			/>
+	</LinearLayout>
+
+
+	<!--   添加标签    -->
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="@dimen/common_margin_20"
+		android:layout_marginRight="@dimen/common_margin_20"
+		android:layout_marginTop="@dimen/common_margin_10">
+
+		<ImageView
+			android:id="@+id/id_img"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:src="@mipmap/icon_p_add_tag"
+		    android:layout_alignBottom="@+id/id_p_add_tag_flowLayout"
+			/>
+
+		<com.ziben365.ocapp.widget.flowlayout.FlowLayout
+			android:id="@+id/id_p_add_tag_flowLayout"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_toLeftOf="@id/id_img"
+			android:layout_marginRight="@dimen/common_margin_15"/>
+
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="0.5dp"
+			android:layout_below="@id/id_p_add_tag_flowLayout"
+			android:layout_marginTop="5dp"
+		    android:background="#40000000"/>
+
+
+	</RelativeLayout>
+
+	<!--填写项目状态-->
+	<EditText
+		android:id="@+id/id_p_edit_status"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="@dimen/common_margin_20"
+		android:layout_marginRight="@dimen/common_margin_20"
+		android:paddingBottom="@dimen/common_margin_5"
+		android:textSize="@dimen/common_text_size_16"
+		android:paddingTop="@dimen/common_margin_20"
+		android:hint="@string/release_project_status"
+		android:textColor="@color/color_text_66"
+		android:textColorHint="@color/color_text_99"
+	    android:drawableRight="@mipmap/icon_p_add_status"
+	    android:background="@android:color/transparent"
+	    android:gravity="center_vertical"
+		/>
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="0.5dp"
+		android:layout_marginLeft="@dimen/common_margin_20"
+		android:layout_marginRight="@dimen/common_margin_20"
+		android:background="#40000000"/>
+
+	<!--   项目估值   -->
+	<EditText
+		android:id="@+id/id_p_edit_value"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="@dimen/common_margin_20"
+		android:layout_marginRight="@dimen/common_margin_20"
+		android:paddingBottom="@dimen/common_margin_5"
+		android:textSize="@dimen/common_text_size_16"
+		android:paddingTop="@dimen/common_margin_20"
+		android:hint="@string/release_project_value"
+		android:textColor="@color/color_text_66"
+		android:textColorHint="@color/color_text_99"
+	    android:background="@android:color/transparent"
+		/>
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="0.5dp"
+		android:layout_marginLeft="@dimen/common_margin_20"
+		android:layout_marginRight="@dimen/common_margin_20"
+		android:background="#40000000"/>
+
+	<!--  一句话项目描述  -->
+	<EditText
+		android:id="@+id/id_p_edit_description"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="@dimen/common_margin_20"
+		android:layout_marginRight="@dimen/common_margin_20"
+		android:paddingBottom="@dimen/common_margin_5"
+		android:textSize="@dimen/common_text_size_16"
+		android:paddingTop="@dimen/common_margin_20"
+		android:hint="@string/release_project_one_desc"
+		android:textColor="@color/color_text_66"
+		android:textColorHint="@color/color_text_99"
+	    android:background="@android:color/transparent"
+	    android:gravity="center_vertical"
+		/>
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="0.5dp"
+		android:layout_marginLeft="@dimen/common_margin_20"
+		android:layout_marginRight="@dimen/common_margin_20"
+		android:background="#40000000"/>
+
+	<!--项目概述-->
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:layout_marginLeft="@dimen/common_margin_20"
+		android:layout_marginRight="@dimen/common_margin_20"
+		android:layout_marginTop="@dimen/common_margin_10"
+		android:padding="@dimen/common_margin_5"
+		>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="@color/color_text_99"
+			android:textSize="@dimen/common_text_size_14"
+			android:text="@string/release_project_desc"/>
+
+		<EditText
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/common_margin_5"
+		    android:minHeight="180dp"
+		    android:background="@drawable/shape_release_project_edit_bg"
+			android:hint="@string/app_name"
+		    android:textSize="@dimen/common_text_size_16"
+		    android:padding="@dimen/common_margin_7"
+		    android:gravity="top"
+			android:textColor="@color/color_text_66"
+			android:textColorHint="@color/color_text_99"
+			/>
+	</LinearLayout>
+
+
+	<!--添加项目效果图-->
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textSize="@dimen/common_text_size_14"
+		android:layout_marginTop="@dimen/common_margin_15"
+		android:layout_marginLeft="@dimen/common_margin_20"
+		android:layout_marginRight="@dimen/common_margin_20"
+		android:text="@string/release_project_add_image"/>
+	<FrameLayout
+		android:layout_width="match_parent"
+		android:layout_height="100dp"
+		android:layout_marginTop="@dimen/common_margin_5"
+		android:layout_marginLeft="@dimen/common_margin_25"
+		android:layout_marginRight="@dimen/common_margin_25"
+		android:gravity="center">
+		<ImageView
+			android:id="@+id/id_p_add_image"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:scaleType="centerCrop"
+			android:src="@mipmap/icon_p_add_photo"
+			android:minHeight="60dp"
+			android:minWidth="80dp"
+			/>
+
+	</FrameLayout>
+
+
+	<!---->
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:layout_marginTop="@dimen/common_margin_10"
+		android:layout_marginLeft="@dimen/common_margin_20"
+		android:layout_marginRight="@dimen/common_margin_20"
+		android:gravity="center_vertical">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="@dimen/common_text_size_16"
+			android:textColor="#323232"
+			android:text="@string/release_project_reason"/>
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="@dimen/common_text_size_14"
+			android:textColor="#898989"
+			android:text="@string/release_project_reason_hint"
+			android:layout_marginLeft="@dimen/common_margin_4"/>
+
+	</LinearLayout>
+
+	<com.ziben365.ocapp.widget.flowlayout.FlowLayout
+		android:id="@+id/id_tag_flowLayout"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/common_margin_5"
+		android:layout_marginLeft="@dimen/common_margin_20"
+		android:layout_marginRight="@dimen/common_margin_20"/>
+
+
+
+	<!---->
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:layout_marginTop="@dimen/common_margin_15"
+		android:layout_marginLeft="@dimen/common_margin_20"
+		android:layout_marginRight="@dimen/common_margin_20"
+		android:layout_marginBottom="40dp">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/common_margin_5"
+			android:textSize="@dimen/common_text_size_14"
+			android:text="@string/release_project_add_product"/>
+
+		<com.ziben365.ocapp.widget.AppGridView
+			android:id="@+id/id_app_gridView"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_marginTop="@dimen/common_margin_5"
+			android:stretchMode="columnWidth"
+			android:verticalSpacing="@dimen/common_margin_15"
+			android:numColumns="3"
+			/>
+
+
+	</LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/white"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:orientation="vertical">
+
+	<android.support.v7.widget.Toolbar
+		android:id="@+id/id_toolbar"
+		android:layout_width="match_parent"
+		android:layout_height="?attr/actionBarSize"
+		android:background="@color/colorPrimary"
+		app:popupTheme="@style/Theme.AppCompat.Light.DarkActionBar"
+	    android:gravity="center"
+		>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="@color/white"
+			android:textSize="@dimen/common_text_size_20"
+			android:text="@string/register_title"
+			android:layout_gravity="center"
+			android:gravity="center"/>
+
+	</android.support.v7.widget.Toolbar>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:orientation="vertical"
+		android:paddingBottom="40dp"
+		android:paddingTop="40dp">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:text="HEY!"
+			android:textColor="@color/colorAppbar"
+			android:textSize="@dimen/common_text_size_18"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_marginTop="@dimen/common_margin_5"
+			android:text="我们一直在等您"
+			android:textColor="@color/colorAppbar"
+			android:textSize="@dimen/common_text_size_16"/>
+	</LinearLayout>
+
+	<android.support.design.widget.TextInputLayout
+		android:id="@+id/id_text_input_layout_mobile"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="@dimen/common_text_size_20"
+		android:layout_marginRight="@dimen/common_text_size_20">
+
+		<EditText
+			android:id="@+id/id_edit_mobile"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:paddingBottom="@dimen/common_margin_15"
+		    android:inputType="phone"
+		    android:hint="@string/register_hint_1"
+		    android:textSize="@dimen/common_text_size_16"
+			style="@style/AlertDialog.AppCompat.Light"
+			/>
+	</android.support.design.widget.TextInputLayout>
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/common_margin_10"
+		android:layout_marginLeft="@dimen/common_text_size_20"
+		android:layout_marginRight="@dimen/common_text_size_20">
+
+		<TextView
+			android:id="@+id/id_btn_yz"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:textColor="@color/white"
+			android:text="@string/register_send_yz_code"
+			android:paddingBottom="@dimen/common_margin_10"
+			android:paddingTop="@dimen/common_margin_10"
+			android:paddingLeft="@dimen/common_margin_5"
+			android:paddingRight="@dimen/common_margin_5"
+			android:background="@drawable/shape_register_yz_bg"/>
+
+
+		<android.support.design.widget.TextInputLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+		    android:layout_toLeftOf="@id/id_btn_yz"
+		    android:layout_marginRight="@dimen/common_margin_10"
+			>
+			<EditText
+				android:id="@+id/id_edit_yz_code"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:paddingBottom="@dimen/common_margin_15"
+				android:inputType="numberSigned"
+				android:hint="@string/register_hint_2"
+				android:textSize="@dimen/common_text_size_16"
+
+				/>
+		</android.support.design.widget.TextInputLayout>
+
+
+	</RelativeLayout>
+	<android.support.design.widget.TextInputLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/common_margin_10"
+		android:layout_marginLeft="@dimen/common_text_size_20"
+		android:layout_marginRight="@dimen/common_text_size_20">
+
+
+		<EditText
+			android:id="@+id/id_edit_password"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:paddingBottom="@dimen/common_margin_15"
+		    android:inputType="textPassword"
+		    android:hint="@string/register_hint_3"
+			android:textSize="@dimen/common_text_size_16"
+			/>
+	</android.support.design.widget.TextInputLayout>
+
+	<Button
+		android:id="@+id/id_btn_register"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/shape_login_btn_bg"
+		android:textColor="@color/colorPrimary"
+		android:textSize="@dimen/common_text_size_18"
+		android:text="@string/register_title"
+		android:layout_marginTop="@dimen/common_text_size_20"
+		android:layout_marginLeft="@dimen/common_text_size_20"
+		android:layout_marginRight="@dimen/common_text_size_20"/>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="@dimen/common_text_size_20"
+		android:layout_marginRight="@dimen/common_margin_10"
+		android:layout_marginTop="@dimen/common_margin_10">
+
+		<CheckBox
+			android:id="@+id/id_checkBox"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:button="@drawable/check_register"
+			style="@style/Base.Widget.AppCompat.CompoundButton.CheckBox"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="@dimen/common_text_size_12"
+			android:textColor="@color/color_text_login"
+			android:layout_toRightOf="@id/id_checkBox"
+			android:layout_marginLeft="@dimen/common_margin_2"
+			android:layout_centerVertical="true"
+			android:text="@string/register_agree"/>
+	</RelativeLayout>
+
+</LinearLayout>

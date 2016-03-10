@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/white"
+	android:orientation="vertical">
+
+	<android.support.v7.widget.Toolbar
+		android:id="@+id/id_toolbar"
+		android:layout_width="match_parent"
+		android:layout_height="?attr/actionBarSize"
+		android:background="@color/colorAppbar">
+
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:text="@string/release_project_comment_title"
+			android:textColor="@color/white"
+			android:textSize="@dimen/common_text_size_20"/>
+
+		<TextView
+			android:id="@+id/id_publish"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical|right"
+			android:text="@string/release_project_comment_publish"
+			android:layout_marginRight="@dimen/common_margin_10"
+			android:textColor="@color/white"
+			android:textSize="@dimen/common_text_size_16"/>
+
+
+	</android.support.v7.widget.Toolbar>
+
+
+	<EditText
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="@dimen/common_text_size_20"
+		android:layout_marginRight="@dimen/common_text_size_20"
+		android:layout_marginTop="@dimen/common_margin_20"
+		android:padding="@dimen/common_margin_7"
+		android:background="@drawable/shape_release_project_edit_bg"
+		android:elevation="@dimen/common_margin_5"
+		android:textColor="#666666"
+		android:textSize="@dimen/common_text_size_16"
+		android:gravity="top"
+		android:minHeight="200dp"/>
+
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+    android:background="@color/colorAppbar"
+    android:padding="@dimen/common_margin_5"
+	>
+
+	<TextView
+		android:id="@+id/id_send_msg"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentRight="true"
+		android:layout_centerVertical="true"
+		android:padding="@dimen/common_margin_5"
+		android:drawableRight="@drawable/ic_menu_send"/>
+
+	<EditText
+		android:id="@+id/id_edit_msg"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:maxLines="4"
+		android:background="@drawable/shape_edit_send_bg"
+		android:layout_marginRight="@dimen/common_margin_5"
+		android:padding="@dimen/common_margin_7"
+		android:layout_toLeftOf="@id/id_send_msg"
+		android:hint="我也说一句..."
+		android:gravity="top"/>
+
+</RelativeLayout>

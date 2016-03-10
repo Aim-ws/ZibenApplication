@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:padding="@dimen/common_margin_5"
+	android:orientation="vertical">
+
+	<TextView
+		android:id="@+id/id_p_image_word"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textSize="@dimen/common_text_size_16"
+		android:textColor="@color/colorAppbar"
+		android:text="@string/p_img_word"/>
+<!--
+	<com.ziben365.ocapp.widget.AppGridView
+		android:id="@+id/id_img_gridView"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_marginTop="@dimen/common_margin_5"
+		android:verticalSpacing="@dimen/common_margin_5"
+		android:horizontalSpacing="@dimen/common_margin_4"
+		android:scrollbars="none"
+		android:stretchMode="columnWidth"
+		android:numColumns="3"/>
+		-->
+
+	<android.support.v7.widget.RecyclerView
+		android:id="@+id/id_p_img_recyclerView"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+	    android:layout_gravity="center_horizontal"
+		/>
+
+</LinearLayout>

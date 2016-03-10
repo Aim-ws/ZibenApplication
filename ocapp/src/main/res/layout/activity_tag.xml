@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/white"
+	android:orientation="vertical">
+
+
+	<android.support.v7.widget.Toolbar
+		android:id="@+id/id_toolbar"
+		android:layout_width="match_parent"
+		android:layout_height="?attr/actionBarSize"
+		android:background="@color/colorAppbar"
+		>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:text="@string/tag_select_title"
+			android:textColor="@color/white"
+			android:textSize="@dimen/common_text_size_20"
+			/>
+
+		<TextView
+			android:id="@+id/id_complete"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical|right"
+			android:layout_marginRight="@dimen/common_margin_5"
+			android:padding="@dimen/common_margin_5"
+			android:textColor="@color/white"
+			android:textSize="@dimen/common_text_size_18"
+			android:text="@string/complete"/>
+	</android.support.v7.widget.Toolbar>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="@dimen/common_margin_10"
+		android:layout_marginTop="@dimen/common_margin_5"
+		android:orientation="vertical">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="@dimen/common_margin_5"
+			android:textColor="@color/color_text_99"
+			android:text="@string/tag_select_hint"
+			android:textSize="@dimen/common_text_size_14"/>
+
+		<com.ziben365.ocapp.widget.flowlayout.FlowLayout
+			android:id="@+id/id_flow_layout"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+		    android:layout_marginTop="@dimen/common_margin_10"
+			/>
+
+
+	</LinearLayout>
+
+</LinearLayout>

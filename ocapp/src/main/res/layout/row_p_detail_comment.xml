@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:animateLayoutChanges="true"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/white"
+	android:orientation="vertical">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:paddingBottom="15dp"
+		android:paddingLeft="@dimen/common_text_size_16"
+		android:paddingRight="20dp"
+		android:paddingTop="@dimen/common_margin_15">
+
+
+		<ImageView
+			android:id="@+id/id_avatar"
+			android:layout_width="40dp"
+			android:layout_height="40dp"
+			android:scaleType="centerCrop"
+			/>
+
+		<TextView
+			android:id="@+id/id_praise"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:drawableLeft="@mipmap/icon_praise_normal"
+			android:drawablePadding="@dimen/common_margin_1"
+			android:gravity="center"
+			/>
+
+		<TextView
+			android:id="@+id/id_user_name"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="@dimen/common_margin_15"
+			android:layout_marginRight="@dimen/common_margin_15"
+			android:layout_marginTop="@dimen/common_margin_3"
+			android:layout_toLeftOf="@id/id_praise"
+			android:layout_toRightOf="@id/id_avatar"
+			android:ellipsize="end"
+			android:gravity="center_vertical|left"
+			android:singleLine="true"
+			android:textColor="#727272"
+			android:textSize="@dimen/common_text_size_16"
+			/>
+
+		<TextView
+			android:id="@+id/id_p_comment"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_alignLeft="@id/id_user_name"
+			android:layout_below="@id/id_user_name"
+			android:layout_marginTop="@dimen/common_margin_5"
+			android:textColor="#323232"
+			android:textSize="@dimen/common_text_size_16"
+			/>
+
+		<!--<RelativeLayout
+			android:id="@+id/id_layout_date"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_alignLeft="@id/id_p_comment"
+			android:layout_below="@id/id_p_comment"
+			android:layout_marginBottom="@dimen/common_margin_5"
+			android:layout_marginTop="@dimen/common_margin_5">-->
+
+		<TextView
+			android:id="@+id/id_p_date"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_alignLeft="@id/id_p_comment"
+			android:layout_below="@id/id_p_comment"
+			android:layout_marginTop="@dimen/common_margin_5"
+			android:layout_marginRight="@dimen/common_margin_20"
+			android:layout_toLeftOf="@+id/id_p_reply"
+			android:text="2015-12-20"
+			android:textColor="#727272"
+			android:textSize="@dimen/common_text_size_12"/>
+
+			<TextView
+				android:id="@+id/id_p_reply"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:background="@drawable/selector_btn_reply"
+				android:layout_alignParentRight="true"
+				android:paddingBottom="@dimen/common_margin_2"
+				android:paddingLeft="@dimen/common_margin_5"
+				android:paddingRight="@dimen/common_margin_5"
+				android:paddingTop="@dimen/common_margin_2"
+				android:text="回复"
+				android:textColor="@color/white"
+				android:textSize="@dimen/common_text_size_12"
+			    android:layout_alignBottom="@id/id_p_date"
+				/>
+
+
+
+		<!--</RelativeLayout>-->
+
+	</RelativeLayout>
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="0.5dp"
+		android:background="#70999999"/>
+
+</LinearLayout>

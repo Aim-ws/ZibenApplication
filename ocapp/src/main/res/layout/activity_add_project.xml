@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/colorAppbar"
+	android:orientation="vertical"
+	android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+	>
+
+	<android.support.v7.widget.Toolbar
+		android:id="@+id/id_toolbar"
+		android:layout_width="match_parent"
+		android:layout_height="?attr/actionBarSize"
+		android:background="@color/colorAppbar"
+		>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/release_project_title"
+			android:textColor="@color/white"
+			android:textSize="@dimen/common_text_size_20"
+			android:layout_gravity="center"/>
+		<TextView
+			android:id="@+id/id_complete"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/complete"
+			android:textColor="@color/white"
+			android:textSize="@dimen/common_text_size_16"
+			android:padding="@dimen/common_margin_5"
+			android:layout_gravity="center_vertical|right"
+			android:layout_marginRight="@dimen/common_margin_10"/>
+
+
+	</android.support.v7.widget.Toolbar>
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:scrollbars="none">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@color/white"
+			android:orientation="vertical">
+
+
+			<android.support.v7.widget.CardView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="@dimen/common_margin_10"
+				android:layout_marginTop="@dimen/common_margin_15"
+				android:elevation="@dimen/common_margin_7"
+				android:visibility="visible"
+				>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="@dimen/common_text_size_10"
+					android:gravity="center_horizontal"
+					android:orientation="vertical">
+
+					<com.ziben365.ocapp.widget.RoundedImageView
+						android:id="@+id/id_p_logo"
+						android:layout_width="50dp"
+						android:layout_height="50dp"
+						android:layout_marginTop="30dp"
+						android:scaleType="centerCrop"
+						android:src="@mipmap/defaults_pic"
+						app:riv_corner_radius="@dimen/common_margin_5"/>
+
+					<!--输入项目名称-->
+					<EditText
+						android:id="@+id/id_p_edit_name"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="@dimen/common_text_size_20"
+						android:layout_marginRight="@dimen/common_text_size_20"
+						android:layout_marginTop="40dp"
+						android:background="@android:color/transparent"
+						android:gravity="center_vertical"
+						android:hint="@string/release_project_name"
+						android:paddingBottom="@dimen/common_margin_5"
+						android:paddingTop="@dimen/common_margin_20"
+						android:singleLine="true"
+						android:textColor="@color/color_text_66"
+						android:textColorHint="@color/color_text_99"
+						android:textSize="@dimen/common_margin_16"
+						/>
+
+					<View
+						android:layout_width="match_parent"
+						android:layout_height="0.5dp"
+						android:layout_marginLeft="@dimen/common_text_size_20"
+						android:layout_marginRight="@dimen/common_text_size_20"
+						android:background="#40000000"
+						/>
+					<!--  一句话项目描述  -->
+					<EditText
+						android:id="@+id/id_p_edit_one_description"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="@dimen/common_margin_20"
+						android:layout_marginRight="@dimen/common_margin_20"
+						android:background="@android:color/transparent"
+						android:gravity="center_vertical"
+						android:hint="@string/release_project_one_desc"
+						android:paddingBottom="@dimen/common_margin_5"
+						android:paddingTop="@dimen/common_margin_20"
+						android:textColor="@color/color_text_66"
+						android:textColorHint="@color/color_text_99"
+						android:textSize="@dimen/common_text_size_16"
+						/>
+
+					<View
+						android:layout_width="match_parent"
+						android:layout_height="0.5dp"
+						android:layout_marginLeft="@dimen/common_margin_20"
+						android:layout_marginRight="@dimen/common_margin_20"
+						android:background="#40000000"/>
+
+					<com.ziben365.ocapp.widget.AppGridView
+						android:id="@+id/id_img_gridView"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="@dimen/common_text_size_20"
+						android:layout_marginRight="@dimen/common_text_size_20"
+						android:layout_marginTop="@dimen/common_margin_25"
+						android:gravity="center"
+						android:numColumns="3"
+						android:verticalSpacing="@dimen/common_margin_10"
+						/>
+
+					<TextView
+						android:id="@+id/id_p_edit_city"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginBottom="@dimen/common_margin_10"
+						android:layout_marginLeft="@dimen/common_text_size_20"
+						android:layout_marginRight="@dimen/common_text_size_20"
+						android:background="@android:color/transparent"
+						android:drawableLeft="@mipmap/icon_p_add_addres"
+						android:drawablePadding="@dimen/common_margin_7"
+						android:clickable="true"
+						android:gravity="center_vertical"
+						android:hint="@string/release_project_city"
+						android:inputType="none"
+						android:paddingBottom="@dimen/common_margin_5"
+						android:paddingTop="@dimen/common_margin_15"
+						android:textColor="@color/color_text_66"
+						android:textColorHint="@color/color_text_99"
+						android:textSize="@dimen/common_text_size_16"
+						/>
+				</LinearLayout>
+			</android.support.v7.widget.CardView>
+
+			<android.support.v7.widget.CardView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="@dimen/common_margin_10"
+				android:layout_marginTop="@dimen/common_margin_10"
+				android:elevation="@dimen/common_margin_7"
+				android:paddingBottom="@dimen/common_margin_8"
+				>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="@dimen/common_margin_20"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+					android:orientation="vertical">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="@dimen/common_margin_20"
+						android:text="项目状态"
+						android:textColor="@color/color_text_99"
+						android:layout_marginLeft="@dimen/common_margin_10"
+						android:textSize="@dimen/common_text_size_16"
+						/>
+					<!--
+					<android.support.v7.widget.RecyclerView
+						android:id="@+id/id_status_recyclerView"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center_horizontal"
+						android:layout_marginTop="@dimen/common_margin_5"
+						android:visibility="gone"/>
+						-->
+
+					<RadioGroup
+						android:id="@+id/id_rg_status"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="@dimen/common_margin_5"
+						android:layout_marginTop="@dimen/common_margin_5"
+						android:orientation="horizontal">
+
+						<RadioButton
+							android:id="@+id/id_rb_1"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+						    android:text="开发中"
+						    android:textSize="@dimen/common_text_size_14"
+						    android:textColor="@color/color_text_66"
+						    android:buttonTint="@color/colorAppbar"
+						    android:button="@drawable/check_btn"
+						    android:checked="true"
+							/>
+						<RadioButton
+							android:id="@+id/id_rb_2"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+						    android:text="开发完成"
+						    android:textSize="@dimen/common_text_size_14"
+						    android:textColor="@color/color_text_66"
+						    android:buttonTint="@color/colorAppbar"
+							android:button="@drawable/check_btn"
+						    android:layout_marginLeft="@dimen/common_margin_10"
+							/>
+						<RadioButton
+							android:id="@+id/id_rb_3"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+						    android:text="众筹中"
+						    android:textSize="@dimen/common_text_size_14"
+						    android:textColor="@color/color_text_66"
+						    android:buttonTint="@color/colorAppbar"
+							android:button="@drawable/check_btn"
+							android:layout_marginLeft="@dimen/common_margin_10"
+							/>
+						<RadioButton
+							android:id="@+id/id_rb_4"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+						    android:text="盈利中"
+						    android:textSize="@dimen/common_text_size_14"
+						    android:textColor="@color/color_text_66"
+						    android:buttonTint="@color/colorAppbar"
+							android:button="@drawable/check_btn"
+							android:layout_marginLeft="@dimen/common_margin_10"
+							/>
+
+
+					</RadioGroup>
+
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="@dimen/common_margin_10"
+						android:layout_marginLeft="@dimen/common_margin_10"
+						android:orientation="horizontal">
+
+						<TextView
+							android:id="@+id/id_p_add_tag"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="@dimen/common_margin_7"
+							android:drawableLeft="@mipmap/icon_p_add_tag"
+							android:drawablePadding="@dimen/common_margin_5"
+							android:text="添加标签"
+							android:textColor="@color/color_text_99"
+							android:textSize="@dimen/common_text_size_16"
+							/>
+
+						<com.ziben365.ocapp.widget.flowlayout.FlowLayout
+							android:id="@+id/id_p_add_tag_flowLayout"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:layout_marginLeft="@dimen/common_margin_10"/>
+
+					</LinearLayout>
+
+
+					<RelativeLayout
+
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="@dimen/common_margin_10"
+						android:layout_marginLeft="@dimen/common_margin_10"
+						android:orientation="horizontal">
+
+						<TextView
+							android:id="@+id/tv_tag_1"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="对项目的估值:"
+							android:textColor="@color/color_text_66"
+							android:textSize="@dimen/common_text_size_16"
+							/>
+						<!--   项目估值   -->
+						<RelativeLayout
+							android:id="@+id/rl_tag"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+						    android:layout_toRightOf="@id/tv_tag_1"
+						    android:layout_alignBottom="@id/tv_tag_1"
+							>
+
+							<EditText
+								android:id="@+id/id_p_edit_value"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_marginLeft="@dimen/common_margin_10"
+								android:layout_marginRight="@dimen/common_margin_10"
+								android:background="@android:color/transparent"
+								android:hint="@string/release_project_value"
+								android:inputType="numberDecimal"
+								android:minWidth="100dp"
+								android:paddingBottom="@dimen/common_margin_2"
+								android:paddingTop="@dimen/common_margin_5"
+								android:textColor="@color/color_text_66"
+								android:textColorHint="@color/color_text_99"
+								android:textSize="@dimen/common_text_size_16"
+							    android:maxLength="12"
+								/>
+
+							<View
+								android:layout_width="match_parent"
+								android:layout_height="0.5dp"
+								android:layout_alignLeft="@id/id_p_edit_value"
+								android:layout_alignRight="@id/id_p_edit_value"
+								android:layout_below="@id/id_p_edit_value"
+								android:background="#40000000"/>
+
+						</RelativeLayout>
+
+						<TextView
+							android:layout_toRightOf="@id/rl_tag"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="万"
+							android:textColor="@color/color_text_66"
+							android:textSize="@dimen/common_text_size_16"
+							/>
+					</RelativeLayout>
+
+				</LinearLayout>
+
+			</android.support.v7.widget.CardView>
+
+			<android.support.v7.widget.CardView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/common_margin_10"
+				android:layout_marginBottom="@dimen/common_margin_10"
+				android:elevation="@dimen/common_margin_7">
+
+				<!--项目概述-->
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="@dimen/common_margin_20"
+					android:layout_marginLeft="@dimen/common_margin_20"
+					android:layout_marginRight="@dimen/common_margin_20"
+					android:layout_marginTop="@dimen/common_margin_20"
+					android:orientation="vertical"
+					android:padding="@dimen/common_margin_5"
+					>
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@string/release_project_desc"
+						android:textColor="@color/color_text_99"
+						android:textSize="@dimen/common_text_size_14"/>
+
+					<EditText
+						android:id="@+id/id_p_edit_description"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="@dimen/common_margin_5"
+						android:background="@drawable/shape_release_project_edit_bg"
+						android:gravity="top"
+						android:hint="@string/release_project_reason_2"
+						android:minHeight="180dp"
+						android:padding="@dimen/common_margin_7"
+						android:textColor="@color/color_text_66"
+						android:textColorHint="@color/color_text_99"
+						android:textSize="@dimen/common_text_size_16"
+						/>
+				</LinearLayout>
+
+			</android.support.v7.widget.CardView>
+
+			<android.support.v7.widget.CardView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="30dp"
+				android:layout_marginTop="@dimen/common_margin_10"
+				android:elevation="@dimen/common_margin_7"
+				android:paddingBottom="@dimen/common_margin_10"
+				>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="vertical">
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="@dimen/common_margin_20"
+						android:layout_marginRight="@dimen/common_margin_20"
+						android:layout_marginTop="@dimen/common_margin_10"
+						android:orientation="vertical">
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="@string/release_project_reason_1"
+							android:textColor="@color/color_text_99"
+							android:textSize="@dimen/common_text_size_14"/>
+
+						<EditText
+							android:id="@+id/id_p_edit_recommend"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="@dimen/common_margin_5"
+							android:background="@drawable/shape_release_project_edit_bg"
+							android:gravity="top"
+							android:hint="@string/release_project_reason_2"
+							android:minHeight="180dp"
+							android:padding="@dimen/common_margin_7"
+							android:textColor="@color/color_text_66"
+							android:textColorHint="@color/color_text_99"
+							android:textSize="@dimen/common_text_size_16"
+							/>
+					</LinearLayout>
+
+
+					<!--推荐理由-->
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="@dimen/common_margin_20"
+						android:layout_marginRight="@dimen/common_margin_20"
+						android:layout_marginTop="@dimen/common_margin_10"
+						android:gravity="center_vertical"
+						android:orientation="horizontal">
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="@string/release_project_reason"
+							android:textColor="#323232"
+							android:textSize="@dimen/common_text_size_16"/>
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginLeft="@dimen/common_margin_4"
+							android:text="@string/release_project_reason_hint"
+							android:textColor="#898989"
+							android:textSize="@dimen/common_text_size_14"/>
+
+					</LinearLayout>
+
+					<com.ziben365.ocapp.widget.flowlayout.FlowLayout
+						android:id="@+id/id_tag_flowLayout"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="@dimen/common_margin_20"
+						android:layout_marginRight="@dimen/common_margin_20"
+						android:layout_marginTop="@dimen/common_margin_5"
+					    android:layout_marginBottom="@dimen/common_margin_15"
+						/>
+
+					<!--
+					<android.support.v7.widget.RecyclerView
+						android:id="@+id/id_recyclerView"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="@dimen/common_margin_20"
+						android:layout_marginRight="@dimen/common_margin_20"
+						android:layout_marginBottom="30dp"/>
+
+						-->
+
+				</LinearLayout>
+			</android.support.v7.widget.CardView>
+		</LinearLayout>
+	</ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="120dp"
+	android:minHeight="120dp"
+	android:background="@color/white"
+	android:orientation="vertical"
+    android:id="@+id/id_root_view"
+	>
+
+
+	<FrameLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="@dimen/common_margin_10">
+
+		<com.ziben365.ocapp.widget.RoundedImageView
+			android:id="@+id/id_imageView"
+			android:layout_width="match_parent"
+			android:layout_height="120dp"
+			android:scaleType="centerCrop"
+			android:src="@mipmap/blue"
+			app:riv_corner_radius="@dimen/common_margin_10"
+			/>
+
+		<FrameLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="bottom"
+			>
+
+			<TextView
+				android:id="@+id/id_description"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:padding="@dimen/common_margin_10"
+				android:text="@string/app_name"
+				android:textColor="@color/white"
+				android:textSize="@dimen/common_text_size_16"/>
+
+			<View
+				android:id="@+id/id_view_masking"
+				android:layout_width="match_parent"
+				android:layout_height="50dp"
+				android:layout_gravity="center"
+				android:alpha="0.1"
+				android:background="@drawable/shape_channel_grid_masking"/>
+
+
+		</FrameLayout>
+
+
+	</FrameLayout>
+
+	<TextView
+		android:id="@+id/id_special_name"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:layout_marginBottom="@dimen/common_margin_20"
+		android:gravity="center"
+		android:text="专题"
+		android:textColor="@color/main_text_color"
+		android:textSize="@dimen/common_text_size_18"/>
+
+
+</LinearLayout>

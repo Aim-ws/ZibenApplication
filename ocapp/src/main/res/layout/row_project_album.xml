@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:animateLayoutChanges="true"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:padding="@dimen/common_margin_10"
+	android:orientation="vertical"
+	android:id="@+id/id_content">
+	
+	<com.ziben365.ocapp.widget.RoundedImageView
+		android:id="@+id/id_p_image"
+		android:layout_width="120dp"
+		android:layout_height="80dp"
+		app:riv_corner_radius="@dimen/common_margin_8"
+	    android:scaleType="centerCrop"
+	    android:layout_centerVertical="true"
+		/>
+
+	<TextView
+		android:id="@+id/id_p_name"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@id/id_p_image"
+		android:textSize="@dimen/common_text_size_18"
+		android:layout_marginLeft="@dimen/common_margin_10"
+		android:layout_marginTop="@dimen/common_margin_5"
+		android:textColor="@color/color_text_33"
+		/>
+	<TextView
+		android:id="@+id/id_p_desc"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textColor="@color/color_text_66"
+		android:textSize="@dimen/common_text_size_16"
+		android:layout_marginTop="@dimen/common_margin_2"
+		android:layout_below="@id/id_p_name"
+		android:layout_alignLeft="@id/id_p_name"
+		/>
+
+
+
+
+
+	<TextView
+		android:id="@+id/id_p_share"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/id_p_desc"
+		android:layout_alignParentRight="true"
+		android:drawableLeft="@mipmap/ic_p_album_share_normal"
+	    android:layout_marginTop="@dimen/common_margin_5"
+	    android:textSize="@dimen/common_text_size_12"
+	    android:textColor="@color/color_text_66"
+		android:gravity="center"
+		/>
+	<TextView
+		android:id="@+id/id_p_comment"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/id_p_desc"
+		android:layout_toLeftOf="@id/id_p_share"
+		android:drawableLeft="@mipmap/ic_p_album_comment"
+		android:layout_marginRight="@dimen/common_margin_5"
+	    android:layout_marginTop="@dimen/common_margin_5"
+	    android:textSize="@dimen/common_text_size_12"
+	    android:textColor="@color/color_text_66"
+		android:gravity="center"
+		/>
+	<TextView
+		android:id="@+id/id_p_like"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/id_p_desc"
+		android:layout_toLeftOf="@id/id_p_comment"
+		android:drawableLeft="@mipmap/ic_p_album_like_normal"
+		android:layout_marginRight="@dimen/common_margin_5"
+	    android:layout_marginTop="@dimen/common_margin_5"
+	    android:textSize="@dimen/common_text_size_12"
+	    android:textColor="@color/color_text_66"
+		android:gravity="center"
+		/>
+	<TextView
+		android:id="@+id/id_p_scan"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/id_p_desc"
+		android:layout_toLeftOf="@id/id_p_like"
+		android:drawableLeft="@mipmap/ic_p_album_scan_normal"
+		android:layout_marginRight="@dimen/common_margin_5"
+	    android:layout_marginTop="@dimen/common_margin_5"
+	    android:textSize="@dimen/common_text_size_12"
+	    android:textColor="@color/color_text_66"
+		android:gravity="center"
+		/>
+
+
+
+
+
+</RelativeLayout>

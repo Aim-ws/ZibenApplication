@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:gravity="center_horizontal"
+	android:orientation="vertical">
+	
+	<com.ziben365.ocapp.widget.CircleImageView
+		android:id="@+id/id_user_avatar"
+		android:layout_width="60dp"
+		android:layout_height="60dp"
+		android:layout_marginTop="@dimen/common_margin_10"
+		android:layout_gravity="center_horizontal"
+		android:src="@mipmap/defaults_pic"/>
+
+	<TextView
+		android:id="@+id/id_user_name"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/common_text_size_12"
+		android:layout_gravity="center_horizontal"
+		android:textColor="#323232"
+		android:text="我不是大侠"
+		android:textSize="@dimen/common_text_size_16"/>
+
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="@dimen/common_text_size_20"
+		android:orientation="horizontal"
+		android:gravity="center"
+		android:layout_marginTop="@dimen/common_margin_12"
+		android:layout_gravity="center_horizontal">
+
+
+		<TextView
+			android:id="@+id/id_user_city"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="@dimen/common_text_size_14"
+			android:drawableLeft="@mipmap/icon_personal_address"
+			android:drawablePadding="@dimen/common_margin_5"
+			android:gravity="center"
+			android:text="杭州"/>
+
+		<ImageView
+			android:id="@+id/id_personal_gender"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="@dimen/common_margin_5"
+			android:src="@mipmap/icon_personal_gender_man"/>
+
+
+	</LinearLayout>
+
+</LinearLayout>

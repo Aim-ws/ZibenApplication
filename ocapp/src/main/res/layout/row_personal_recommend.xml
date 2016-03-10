@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:animateLayoutChanges="true"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/id_content"
+	android:orientation="vertical">
+
+	<android.support.v7.widget.CardView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="@dimen/common_margin_15"
+		android:layout_marginRight="@dimen/common_margin_15"
+		android:layout_marginTop="@dimen/common_margin_10"
+		android:layout_marginBottom="@dimen/common_margin_10"
+		app:cardCornerRadius="@dimen/common_margin_5"
+		app:cardElevation="@dimen/common_margin_5"
+		app:cardBackgroundColor="@color/white">
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+			<RelativeLayout
+				android:id="@+id/id_p_header"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="@dimen/common_margin_10"
+				android:layout_marginRight="@dimen/common_margin_10"
+				android:layout_marginTop="@dimen/common_margin_7">
+
+				<com.ziben365.ocapp.widget.RoundedImageView
+					android:id="@+id/id_p_logo"
+					android:layout_width="50dp"
+					android:layout_height="50dp"
+					app:riv_corner_radius="@dimen/common_margin_5"
+				    android:scaleType="centerCrop"
+					/>
+
+				<TextView
+					android:id="@id/id_p_name"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:singleLine="true"
+					android:ellipsize="end"
+					android:textColor="@color/color_text_33"
+					android:textSize="@dimen/common_text_size_16"
+					android:layout_toRightOf="@id/id_p_logo"
+					android:layout_marginLeft="@dimen/common_margin_10"/>
+				<TextView
+					android:id="@id/id_p_desc"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:singleLine="true"
+					android:ellipsize="end"
+					android:textColor="@color/color_text_66"
+					android:textSize="@dimen/common_text_size_14"
+					android:layout_below="@id/id_p_name"
+					android:layout_alignLeft="@id/id_p_name"
+					android:layout_marginTop="@dimen/common_margin_2"/>
+
+			</RelativeLayout>
+			
+			<ImageView
+				android:id="@id/id_p_image"
+				android:layout_width="match_parent"
+				android:layout_height="150dp"
+				android:scaleType="centerCrop"
+				android:layout_below="@id/id_p_header"
+				android:layout_marginTop="@dimen/common_margin_5"/>
+
+			<TextView
+				android:id="@+id/id_p_dollar"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_below="@id/id_p_image"
+				android:layout_alignParentRight="true"
+				android:layout_marginTop="@dimen/common_margin_8"
+				android:layout_marginRight="@dimen/common_margin_10"
+				android:textColor="@color/color_text_89"
+				android:textSize="@dimen/common_text_size_12"
+				android:drawableLeft="@mipmap/ic_p_album_dollar_normal"
+				android:gravity="center"
+				/>
+			<TextView
+				android:id="@+id/id_p_comment"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_below="@id/id_p_image"
+				android:layout_toLeftOf="@id/id_p_dollar"
+				android:layout_marginTop="@dimen/common_margin_8"
+				android:layout_marginRight="@dimen/common_margin_5"
+				android:textColor="@color/color_text_89"
+				android:textSize="@dimen/common_text_size_12"
+				android:drawableLeft="@mipmap/ic_p_album_comment"
+				android:gravity="center"
+				/>
+			<TextView
+				android:id="@+id/id_p_like"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_below="@id/id_p_image"
+				android:layout_toLeftOf="@id/id_p_comment"
+				android:layout_marginTop="@dimen/common_margin_8"
+				android:layout_marginRight="@dimen/common_margin_5"
+				android:textColor="@color/color_text_89"
+				android:textSize="@dimen/common_text_size_12"
+				android:drawableLeft="@mipmap/ic_p_album_like_normal"
+				android:gravity="center"
+				/>
+			<TextView
+				android:id="@+id/id_p_scan"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_below="@id/id_p_image"
+				android:layout_toLeftOf="@id/id_p_like"
+				android:layout_marginTop="@dimen/common_margin_8"
+				android:layout_marginRight="@dimen/common_margin_5"
+				android:textColor="@color/color_text_89"
+				android:textSize="@dimen/common_text_size_12"
+				android:drawableLeft="@mipmap/ic_p_album_scan_normal"
+				android:gravity="center"
+				/>
+
+		</RelativeLayout>
+
+
+
+	</android.support.v7.widget.CardView>
+
+</LinearLayout>

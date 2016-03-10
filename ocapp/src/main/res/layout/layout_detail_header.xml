@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/white"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:orientation="vertical">
+
+	<RelativeLayout
+		android:id="@+id/id_p_layout_top"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="@dimen/common_margin_10">
+
+
+		<com.ziben365.ocapp.widget.RoundedImageView
+			android:id="@+id/id_p_logo"
+			android:layout_width="48dp"
+			android:layout_height="48dp"
+			app:riv_corner_radius="@dimen/common_margin_5"
+			android:layout_marginLeft="@dimen/common_margin_10"
+			android:scaleType="centerCrop"
+			/>
+
+
+		<TextView
+			android:id="@+id/id_p_name"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_toRightOf="@id/id_p_logo"
+			android:layout_marginLeft="@dimen/common_margin_15"
+			android:layout_marginTop="@dimen/common_margin_4"
+			android:textColor="#323232"
+			android:textSize="@dimen/common_text_size_20"/>
+
+		<TextView
+			android:id="@+id/id_p_description"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+		    android:layout_alignLeft="@id/id_p_name"
+		    android:layout_below="@id/id_p_name"
+		    android:layout_marginTop="@dimen/common_margin_4"
+		    android:textSize="@dimen/common_text_size_12"
+		    android:textColor="#898989"
+			/>
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_alignLeft="@id/id_p_name"
+			android:layout_below="@id/id_p_logo"
+			android:layout_marginTop="@dimen/common_margin_4">
+
+			<ImageView
+				android:id="@+id/id_p_label"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:src="@mipmap/icon_brand_tag"
+				/>
+			<com.ziben365.ocapp.widget.flowlayout.FlowLayout
+				android:id="@+id/id_flow_layout_tag"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:minHeight="40dp"
+				android:layout_toRightOf="@id/id_p_label"
+				android:layout_marginLeft="@dimen/common_margin_10"
+			    android:layout_centerVertical="true"
+				/>
+		</RelativeLayout>
+	</RelativeLayout>
+
+
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:layout_marginTop="@dimen/common_margin_15"
+		android:layout_marginLeft="25dp"
+		android:layout_marginRight="25dp"
+		android:padding="@dimen/common_margin_10"
+		android:gravity="center"
+		android:orientation="horizontal">
+
+		<TextView
+			android:id="@+id/id_tv_dollar"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:drawableTop="@mipmap/icon_p_praise"
+			android:drawablePadding="@dimen/common_margin_4"
+			android:textSize="@dimen/common_text_size_12"
+			android:layout_marginRight="@dimen/common_margin_20"
+			android:gravity="center"
+			android:layout_gravity="center"
+			android:text="@string/p_praise_1"/>
+		<TextView
+			android:id="@+id/id_tv_like"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:drawableTop="@mipmap/icon_p_like"
+			android:drawablePadding="@dimen/common_margin_4"
+			android:textSize="@dimen/common_text_size_12"
+			android:gravity="center"
+			android:layout_gravity="center"
+			android:text="@string/p_like"/>
+		<TextView
+			android:id="@+id/id_tv_comment"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:drawableTop="@mipmap/icon_p_comment"
+			android:drawablePadding="@dimen/common_margin_4"
+			android:textSize="@dimen/common_text_size_12"
+			android:layout_marginLeft="@dimen/common_margin_20"
+			android:gravity="center"
+			android:layout_gravity="center"
+			android:text="@string/p_comment"/>
+		<TextView
+			android:id="@+id/id_tv_share"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:drawableTop="@mipmap/icon_p_share"
+			android:drawablePadding="@dimen/common_margin_4"
+			android:textSize="@dimen/common_text_size_12"
+			android:layout_marginLeft="@dimen/common_margin_20"
+			android:gravity="center"
+			android:layout_gravity="center"
+			android:text="@string/p_share"/>
+
+	</LinearLayout>
+
+	<TextView
+		android:id="@+id/id_p_content"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:lineSpacingMultiplier="1.1"
+		android:lineSpacingExtra="@dimen/common_margin_1"
+		android:textSize="@dimen/common_text_size_14"
+		android:layout_marginTop="@dimen/common_margin_20"
+		android:layout_marginLeft="35dp"
+		android:layout_marginRight="35dp"/>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/common_margin_13"
+		android:orientation="horizontal">
+
+		<com.ziben365.ocapp.widget.CircleImageView
+			android:layout_width="48dp"
+			android:layout_height="48dp"
+		    android:layout_marginLeft="@dimen/common_margin_20"
+		    android:scaleType="centerCrop"
+			android:id="@+id/id_p_avatar"/>
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="@dimen/common_text_size_16"
+		    android:layout_gravity="center_vertical"
+		    android:textColor="@color/main_text_color"
+		    android:layout_marginLeft="@dimen/common_margin_10"
+			android:id="@+id/id_p_username"/>
+	</LinearLayout>
+	<android.support.v7.widget.CardView
+		android:id="@+id/id_cardView"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="@dimen/common_margin_20"
+	    android:layout_marginRight="@dimen/common_margin_20"
+	    android:layout_marginTop="@dimen/common_margin_10"
+	    android:minHeight="50dp"
+	    app:cardCornerRadius="@dimen/common_margin_5"
+	    app:cardElevation="@dimen/common_margin_3"
+
+		>
+		<LinearLayout
+			android:id="@+id/id_round_container"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:paddingLeft="@dimen/common_margin_13"
+		    android:paddingRight="@dimen/common_margin_13"
+		    android:paddingTop="@dimen/common_margin_10"
+		    android:paddingBottom="@dimen/common_margin_6"
+
+			/>
+	</android.support.v7.widget.CardView>
+
+
+	<include
+		android:id="@+id/id_p_question"
+		layout="@layout/layout_detail_question"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="@dimen/common_margin_13"
+	    android:layout_marginLeft="@dimen/common_margin_5"
+	    android:layout_marginRight="@dimen/common_margin_5"
+		android:visibility="visible"
+		/>
+
+
+
+	<include
+		android:id="@+id/id_p_img"
+		layout="@layout/layout_detail_imgs"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/common_margin_20"
+		android:layout_marginLeft="@dimen/common_margin_5"
+		android:layout_marginRight="@dimen/common_margin_5"
+		android:visibility="gone"
+		/>
+
+	<!--
+	<RelativeLayout
+		android:id="@+id/id_p_down_layout"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/common_margin_17">
+
+		<TextView
+			android:id="@+id/id_tv_down"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:drawableBottom="@mipmap/icon_p_down"
+		    android:text="@string/p_down"
+		    android:textSize="@dimen/common_text_size_12"
+		    android:gravity="center"
+		    android:drawablePadding="@dimen/common_margin_2"
+		    android:paddingBottom="@dimen/common_margin_1"
+		    android:paddingTop="@dimen/common_margin_1"
+		    android:paddingLeft="@dimen/common_margin_3"
+		    android:paddingRight="@dimen/common_margin_3"
+		    android:textColor="#afafaf"
+			/>
+
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/common_margin_1"
+			android:background="#d2d2d2"
+		    android:layout_centerVertical="true"
+		    android:layout_toLeftOf="@id/id_tv_down"
+		    android:layout_marginRight="@dimen/common_margin_15"
+			/>
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/common_margin_1"
+			android:background="#d2d2d2"
+		    android:layout_centerVertical="true"
+		    android:layout_toRightOf="@id/id_tv_down"
+		    android:layout_marginLeft="@dimen/common_margin_15"
+			/>
+
+	</RelativeLayout>
+
+	-->
+
+	<LinearLayout
+		android:id="@+id/id_p_praise_layout"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/common_margin_15"
+		android:paddingLeft="@dimen/common_margin_15"
+		android:paddingRight="@dimen/common_margin_15"
+		android:orientation="vertical">
+
+		<TextView
+			android:id="@+id/id_tv_p_praise"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textColor="@color/colorAppbar"
+			android:textSize="@dimen/common_text_size_18"
+			android:text="@string/p_praise"/>
+
+		<LinearLayout
+			android:id="@+id/id_p_praise_container"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/common_margin_8"
+			android:orientation="horizontal"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/id_p_comment_layout"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/common_margin_15"
+		android:paddingLeft="@dimen/common_margin_15"
+		android:paddingRight="@dimen/common_margin_15"
+		android:layout_marginBottom="@dimen/common_margin_20"
+		android:orientation="vertical">
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/common_margin_20">
+
+			<TextView
+				android:id="@+id/id_tv_label"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerInParent="true"
+				android:text="@string/p_o_comment"
+				android:textSize="@dimen/common_text_size_16"
+				android:gravity="center"
+				android:paddingBottom="@dimen/common_margin_1"
+				android:paddingTop="@dimen/common_margin_1"
+				android:paddingLeft="@dimen/common_margin_3"
+				android:paddingRight="@dimen/common_margin_3"
+				/>
+
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/common_margin_1"
+				android:background="#d2d2d2"
+				android:layout_centerVertical="true"
+				android:layout_toLeftOf="@id/id_tv_label"
+				android:layout_marginRight="@dimen/common_margin_15"
+			    android:layout_marginLeft="35dp"
+				/>
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/common_margin_1"
+				android:background="#d2d2d2"
+				android:layout_centerVertical="true"
+				android:layout_toRightOf="@id/id_tv_label"
+				android:layout_marginLeft="@dimen/common_margin_15"
+			    android:layout_marginRight="35dp"
+				/>
+
+		</RelativeLayout>
+
+	</LinearLayout>
+
+</LinearLayout>

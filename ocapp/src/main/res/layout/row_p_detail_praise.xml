@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:animateLayoutChanges="true"
+	>
+
+	<RelativeLayout
+		android:id="@+id/id_content"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="@dimen/common_margin_10">
+
+		<com.ziben365.ocapp.widget.CircleImageView
+			android:id="@+id/id_avatar"
+			android:layout_width="50dp"
+			android:layout_height="50dp"
+			android:scaleType="centerCrop"
+			/>
+
+		<ImageView
+			android:id="@+id/id_next"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:layout_alignParentRight="true"
+			android:src="@mipmap/icon_p_search_next"/>
+
+		<TextView
+			android:id="@+id/id_p_name"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="@dimen/common_margin_10"
+			android:layout_marginRight="@dimen/common_margin_10"
+			android:layout_centerVertical="true"
+			android:layout_toRightOf="@id/id_avatar"
+			android:layout_toLeftOf="@id/id_next"
+			android:textColor="@color/color_text_33"
+			android:textSize="@dimen/common_text_size_18"
+			/>
+
+	</RelativeLayout>
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="0.5dp"
+	    android:background="@color/color_text_99"
+	    android:alpha="0.5"></View>
+
+
+</LinearLayout>

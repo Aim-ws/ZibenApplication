@@ -1,0 +1,115 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '23.0.2'
+
+    defaultConfig {
+        applicationId "com.ziben365.ocapp"
+        minSdkVersion 14
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        /*release {
+            // 不显示log
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+
+            //是否混淆 true or false
+            minifyEnabled false
+
+            //ZipAlign优化
+            zipAlignEnabled true
+
+            //加载默认混淆配置文件及自定义混淆 配置
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }*/
+    }
+    dexOptions {
+        incremental true
+    }
+
+    /***
+     *
+     *
+     *  productFlavors{*  xiaomi{manifestPlaceholders = [UMENG_CHANNEL_VALUE: "xiaomi"]}*  _360 {manifestPlaceholders = [UMENG_CHANNEL_VALUE: "_360"]}*  baidu {manifestPlaceholders = [UMENG_CHANNEL_VALUE: "baidu"]}*  wandoujia {manifestPlaceholders = [UMENG_CHANNEL_VALUE: "wandoujia"]}}*
+     */
+
+    productFlavors {
+        //xiaomi{}
+        //_360{}
+        baidu {}
+        //wandoujia{}
+    }
+
+    productFlavors.all {
+        flavor -> flavor.manifestPlaceholders = [UMENG_CHANNEL_VALUE: name]
+    }
+
+    sourceSets.main {
+        jniLibs.srcDirs = ['libs']  // <-- Set your folder here!
+    }
+
+    /*sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            resources.srcDirs = ['src']
+            aidl.srcDirs = ['src']
+            renderscript.srcDirs = ['src']
+            res.srcDirs = ['res']
+            assets.srcDirs = ['assets']
+            jniLibs.srcDirs = ['libs']
+        }
+    }*/
+
+    /*sourceSets{
+        main{
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+*/
+
+    /*sourceSets.main {
+
+        jniLibs.srcDir 'src/main/libs' // <-- Set your folder here!
+    }*/
+
+    splits {
+        abi {
+            enable true
+            reset()
+            include 'x86', 'x86_64', 'armeabi-v7a', 'armeabi'
+            universalApk false
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'com.android.support:design:23.1.1'
+    compile 'com.android.support:cardview-v7:23.1.1'
+    compile 'com.android.support:recyclerview-v7:23.1.1'
+    compile 'com.jakewharton:butterknife:5.1.1'
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'eu.the4thfloor.volley:com.android.volley:2015.05.28'
+    compile 'com.android.support:palette-v7:23.1.1'
+    compile 'com.google.code.gson:gson:2.5'
+    compile 'com.github.bumptech.glide:glide:3.6.1'
+    compile 'org.msgpack:msgpack:0.6.12'
+    compile 'org.jbundle.util.osgi.wrapped:org.jbundle.util.osgi.wrapped.org.apache.http.client:4.1.2'
+    compile 'com.hynnet:commons-lang3:3.4'
+    compile 'com.readystatesoftware.systembartint:systembartint:1.0.4'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    compile files('libs/ShareSDK-Wechat-Moments-2.6.6.jar')
+    compile files('libs/androidsvg-1.2.0.jar')
+    compile files('libs/qiniu-android-sdk-7.0.9.jar')
+    compile files('libs/qiniuyun-api-zhb.jar')
+    compile files('libs/android-async-http-1.4.9.jar')
+    compile files('libs/httpclient-4.4.1.1.jar')
+    compile files('libs/jpush-android-2.1.0.jar')
+}
+

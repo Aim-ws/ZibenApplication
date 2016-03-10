@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:orientation="vertical">
+
+	<TextView
+		android:id="@+id/id_header_hint"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+	    android:layout_marginLeft="@dimen/common_margin_20"
+	    android:layout_marginTop="@dimen/common_margin_20"
+	    android:textSize="@dimen/common_text_size_18"
+		/>
+
+	<RelativeLayout
+		android:layout_below="@id/id_header_hint"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="@dimen/common_margin_20"
+		android:layout_marginRight="@dimen/common_margin_20"
+		android:layout_marginTop="@dimen/common_margin_12"
+		android:id="@+id/id_item_layout">
+
+		<TextView
+			android:id="@+id/id_ranking_num"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+		    android:textSize="@dimen/common_text_size_18"
+		    android:minWidth="20dp"
+		    android:layout_centerVertical="true"
+			/>
+
+		<com.ziben365.ocapp.widget.RoundedImageView
+			android:id="@+id/id_logo"
+			android:layout_width="50dp"
+			android:layout_height="50dp"
+			android:layout_toRightOf="@id/id_ranking_num"
+			android:layout_marginLeft="@dimen/common_margin_8"
+			android:layout_centerVertical="true"
+			android:scaleType="centerCrop"
+			app:riv_corner_radius="@dimen/common_margin_5"
+			/>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_toRightOf="@id/id_logo"
+			android:layout_marginLeft="@dimen/common_margin_10"
+			android:orientation="vertical"
+			android:layout_centerVertical="true">
+
+
+			<TextView
+				android:id="@+id/id_p_name"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:textSize="@dimen/common_text_size_18"
+				android:textColor="@android:color/black"
+				/>
+			<TextView
+				android:id="@+id/id_p_description"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/common_margin_2"
+				android:textSize="@dimen/common_text_size_14"
+				/>
+
+		</LinearLayout>
+
+
+	</RelativeLayout>
+
+
+
+</RelativeLayout>

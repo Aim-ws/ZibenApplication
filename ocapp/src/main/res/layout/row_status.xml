@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:id="@+id/id_container"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+	    android:gravity="center_vertical"
+		>
+
+		<View
+			android:id="@+id/id_img_line_left"
+			android:layout_width="7dp"
+			android:layout_height="@dimen/common_margin_2"
+			android:background="@color/color_text_99"/>
+
+
+		<ImageView
+			android:id="@+id/id_img_status"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+		    android:src="@mipmap/icon_p_status_pressed"
+			/>
+		<View
+			android:id="@+id/id_img_line_right"
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/common_margin_2"
+		    android:background="@color/color_text_99"/>
+	</LinearLayout>
+
+	<TextView
+		android:id="@+id/id_name"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textColor="@color/color_text_66"
+		android:textSize="@dimen/common_text_size_16"
+		android:text="开发中"/>
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="@dimen/common_margin_5"
+		android:orientation="vertical"
+		android:background="@drawable/shape_p_question_dialog_bg"
+		android:padding="@dimen/common_margin_10"
+		>
+
+		<TextView
+			android:id="@+id/id_p_question_name"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+		    android:textSize="@dimen/common_text_size_16"
+		    android:textColor="#323232"
+		    android:text="@string/app_name"
+			/>
+
+		<EditText
+			android:layout_width="match_parent"
+			android:layout_height="200dp"
+		    android:background="@null"
+		    android:layout_marginTop="@dimen/common_margin_5"
+		    android:padding="@dimen/common_margin_8"
+		    android:textSize="@dimen/common_text_size_16"
+		    android:hint="@string/release_project_reason_hint_dialog_1"
+		    android:gravity="top"
+		    android:elevation="1dp"
+		    android:textColor="#323232"
+			/>
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textSize="@dimen/common_text_size_14"
+			android:textColor="#323232"
+			android:text="@string/release_project_reason_hint_dialog"
+		    android:layout_marginTop="@dimen/common_margin_10"
+			/>
+
+
+
+
+
+
+	</LinearLayout>
+
+</FrameLayout>

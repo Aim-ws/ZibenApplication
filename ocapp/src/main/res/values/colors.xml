@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!--
+	<color name="colorPrimary">#3F51B5</color>
+	-->
+	<color name="colorPrimary">#EE6B50</color>
+	<!--
+	<color name="colorPrimaryDark">#f5411c</color>
+	-->
+	<color name="colorPrimaryDark">#EE6B50</color>
+	<!--
+	<color name="colorAccent">#FF4081</color>
+	-->
+	<color name="colorAccent">#ee6b50</color>
+
+	<color name="black_overlay">#66000000</color>
+
+	<color name="main_text_color">#c49b5c</color>
+	<color name="white">#ffffff</color>
+
+	<color name="gray">#ddd9d9</color>
+
+	<color name="colorAppbar">#ee6b50</color>
+
+	<color name="color_text_login">#4cbbff</color>
+
+	<color name="color_text_89">#898989</color>
+	<color name="color_text_99">#999999</color>
+	<color name="color_text_66">#666666</color>
+	<color name="color_text_33">#333333</color>
+
+	<color name="province_line_border">#666666</color>
+	
+	<color name="loading_1">#ff5555</color>
+	<color name="loading_2">#ff9555</color>
+	<color name="loading_3">#ffc555</color>
+	<color name="loading_4">#c0e540</color>
+	<color name="loading_5">#60eadb</color>
+	<color name="loading_6">#69c9f1</color>
+	<color name="loading_7">#898be6</color>
+	<color name="loading_8">#c174e1</color>
+
+	<color name="color_gold">#f94e61</color>
+
+	<color name="color_nav_background">#eeeeee</color>
+
+	<color name="color_click_span_text">#507daf</color>
+	<color name="color_click_span_text1">#323232</color>
+
+</resources>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+	>
+
+	<RelativeLayout
+		android:id="@+id/top_rl"
+		android:layout_width="match_parent"
+		android:layout_height="48dp"
+		android:layout_alignParentTop="true"
+		android:background="@color/colorAppbar">
+
+		<ImageView
+			android:id="@+id/id_back"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:layout_marginLeft="@dimen/common_margin_10"
+			android:background="@mipmap/abc_ic_ab_back_mtrl_am_alpha"
+			android:scaleType="centerCrop"/>
+
+
+		<TextView
+			android:id="@+id/id_complete"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="@android:color/white"
+			android:background="@drawable/shape_btn_photo_complete"
+			android:layout_margin="5dp"
+			android:textSize="16sp"
+			android:gravity="center"
+			android:paddingLeft="@dimen/common_margin_10"
+			android:paddingRight="@dimen/common_margin_10"
+			android:paddingTop="@dimen/common_margin_8"
+			android:paddingBottom="@dimen/common_margin_8"
+			android:layout_alignParentRight="true"
+			android:layout_marginRight="@dimen/common_margin_10"
+			android:layout_centerVertical="true"
+			android:text="完成"/>
+
+		<TextView
+			android:id="@+id/id_title"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:textColor="@color/white"
+			android:textSize="@dimen/common_text_size_18"
+			android:text="所有图片"/>
+
+	</RelativeLayout>
+
+	<GridView
+		android:id="@+id/id_gridView"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+	    android:numColumns="3"
+	    android:stretchMode="columnWidth"
+	    android:cacheColorHint="@android:color/transparent"
+	    android:listSelector="@android:color/transparent"
+	    android:horizontalSpacing="3dp"
+	    android:verticalSpacing="3dp"
+	    android:layout_above="@+id/id_bottom_ly"
+	    android:layout_below="@id/top_rl"
+	    android:padding="@dimen/dp2"
+		>
+
+
+	</GridView>
+
+	<RelativeLayout
+		android:id="@+id/id_bottom_ly"
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:layout_alignParentBottom="true"
+		android:background="#ee000000"
+		android:clipChildren="true"
+		>
+
+		<TextView
+			android:id="@+id/id_dir_name"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+		    android:layout_centerVertical="true"
+		    android:paddingLeft="@dimen/common_margin_10"
+		    android:text="所有图片"
+		    android:textColor="@android:color/white"
+			/>
+		<TextView
+			android:id="@+id/id_dir_count"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+		    android:layout_centerVertical="true"
+		    android:paddingRight="@dimen/common_margin_10"
+		    android:text="100张"
+		    android:textColor="@android:color/white"
+			/>
+
+
+
+	</RelativeLayout>
+
+</RelativeLayout>

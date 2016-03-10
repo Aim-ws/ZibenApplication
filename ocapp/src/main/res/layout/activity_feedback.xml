@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+	<android.support.v7.widget.Toolbar
+		android:id="@+id/id_toolbar"
+		android:layout_width="match_parent"
+		android:layout_height="?attr/actionBarSize"
+		android:background="@color/colorPrimary"
+		android:gravity="center"
+		app:popupTheme="@style/Theme.AppCompat.Light.DarkActionBar">
+
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="@color/white"
+			android:textSize="@dimen/common_text_size_20"
+			android:text="@string/feedback_title"
+			android:layout_gravity="center"
+			android:gravity="center"/>
+	</android.support.v7.widget.Toolbar>
+
+
+
+	<EditText
+		android:id="@+id/id_edit"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:minHeight="280dp"
+	    android:layout_margin="@dimen/common_margin_15"
+	    android:background="@drawable/shape_edit_send_bg"
+	    android:elevation="@dimen/common_margin_4"
+	    android:gravity="top"
+	    android:padding="@dimen/common_margin_8"
+	    android:textColor="@color/color_text_66"
+	    android:hint="请输入反馈意见"
+		/>
+
+	<Button
+		android:id="@+id/id_btn_ok"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textColor="@color/white"
+		android:text="@string/feedback_submit"
+		android:textSize="@dimen/common_text_size_20"
+		android:background="@drawable/shape_btn_feedback"
+		android:layout_gravity="center_horizontal"
+		android:layout_marginTop="50dp"/>
+
+</LinearLayout>

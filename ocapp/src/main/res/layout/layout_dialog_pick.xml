@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@android:color/transparent"
+	android:padding="@dimen/common_margin_20"
+	android:gravity="bottom"
+	android:orientation="vertical">
+
+	<TextView
+		android:id="@+id/id_photo_pick"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:textColor="@color/colorAppbar"
+		android:text="@string/dialog_pick_photo"
+		android:padding="@dimen/common_margin_10"
+		android:textSize="@dimen/common_text_size_18"
+		android:background="@drawable/shape_item_up"/>
+	<TextView
+		android:id="@+id/id_photo_album"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:textColor="@color/colorAppbar"
+		android:text="@string/dialog_album_photo"
+		android:padding="@dimen/common_margin_10"
+		android:textSize="@dimen/common_text_size_18"
+		android:layout_marginTop="@dimen/common_margin_1"
+		android:background="@drawable/shape_item_down"/>
+	<TextView
+		android:id="@+id/id_photo_cancel"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:textColor="@color/colorAppbar"
+		android:text="@string/dialog_cancel"
+		android:padding="@dimen/common_margin_10"
+		android:textSize="@dimen/common_text_size_18"
+		android:layout_marginTop="@dimen/common_margin_5"
+		android:background="@drawable/shape_item_single"/>
+
+</LinearLayout>

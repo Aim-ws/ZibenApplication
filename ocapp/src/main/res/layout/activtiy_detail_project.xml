@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:detail="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+
+	>
+
+	<android.support.design.widget.CoordinatorLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_above="@+id/id_bottom_btn"
+		android:fitsSystemWindows="true">
+
+		<android.support.design.widget.AppBarLayout
+			android:id="@+id/appbar_layout"
+			android:layout_width="match_parent"
+			android:layout_height="350dp"
+			android:fitsSystemWindows="true"
+			android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+			<android.support.design.widget.CollapsingToolbarLayout
+				android:id="@+id/collapsing_toolbar_layout"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:fitsSystemWindows="true"
+				detail:contentScrim="?attr/colorPrimary"
+				detail:expandedTitleMarginEnd="64dp"
+				detail:expandedTitleMarginStart="48dp"
+				detail:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+
+				<ImageView
+					android:id="@+id/back_icon"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:fitsSystemWindows="true"
+					android:scaleType="centerCrop"
+					android:src="@mipmap/bg"
+					detail:layout_collapseMode="parallax"
+					detail:layout_collapseParallaxMultiplier="0.7"
+					/>
+
+				<android.support.v7.widget.Toolbar
+					android:id="@+id/toolbar"
+					android:layout_width="match_parent"
+					android:layout_height="?attr/actionBarSize"
+					android:background="@android:color/transparent"
+					android:layoutMode="clipBounds"
+					detail:layout_collapseMode="pin"
+					detail:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+					>
+
+				</android.support.v7.widget.Toolbar>
+			</android.support.design.widget.CollapsingToolbarLayout>
+		</android.support.design.widget.AppBarLayout>
+
+
+		<com.ziben365.ocapp.widget.AppNestedScrollView
+			android:id="@+id/scrollView"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:fillViewport="true"
+			detail:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+			<include layout="@layout/layout_detail_content"/>
+
+
+		</com.ziben365.ocapp.widget.AppNestedScrollView>
+
+	</android.support.design.widget.CoordinatorLayout>
+
+
+	<LinearLayout
+		android:id="@+id/id_bottom_btn"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_centerHorizontal="true"
+		android:gravity="center"
+		android:orientation="horizontal"
+		android:padding="@dimen/common_margin_5"
+		android:visibility="gone">
+
+		<TextView
+			android:id="@+id/id_tv_dollar"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_marginRight="@dimen/common_margin_20"
+			android:drawablePadding="@dimen/common_margin_4"
+			android:drawableTop="@mipmap/icon_p_dollar"
+			android:gravity="center"
+			android:text="@string/p_dollar"
+			android:textSize="@dimen/common_text_size_12"/>
+
+		<TextView
+			android:id="@+id/id_tv_like"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:drawablePadding="@dimen/common_margin_4"
+			android:drawableTop="@mipmap/icon_p_like"
+			android:gravity="center"
+			android:text="@string/p_like"
+			android:textSize="@dimen/common_text_size_12"/>
+
+		<TextView
+			android:id="@+id/id_tv_comment"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_marginLeft="@dimen/common_margin_20"
+			android:drawablePadding="@dimen/common_margin_4"
+			android:drawableTop="@mipmap/icon_p_comment"
+			android:gravity="center"
+			android:text="@string/p_comment"
+			android:textSize="@dimen/common_text_size_12"/>
+
+		<TextView
+			android:id="@+id/id_tv_share"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_marginLeft="@dimen/common_margin_20"
+			android:drawablePadding="@dimen/common_margin_4"
+			android:drawableTop="@mipmap/icon_p_share"
+			android:gravity="center"
+			android:text="@string/p_share"
+			android:textSize="@dimen/common_text_size_12"/>
+	</LinearLayout>
+
+</RelativeLayout>

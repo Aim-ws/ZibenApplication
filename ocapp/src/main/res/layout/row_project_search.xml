@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:animateLayoutChanges="true"
+	android:background="@color/white"
+	android:orientation="horizontal"
+	android:paddingLeft="@dimen/common_margin_15"
+	android:paddingRight="@dimen/common_margin_15"
+	android:paddingTop="@dimen/common_margin_10"
+	android:paddingBottom="@dimen/common_margin_2"
+	android:id="@+id/id_p_content">
+
+	<com.ziben365.ocapp.widget.RoundedImageView
+		android:id="@+id/id_p_image"
+		android:layout_width="100dp"
+		android:layout_height="75dp"
+		android:scaleType="centerCrop"
+		app:riv_corner_radius="@dimen/common_margin_5"
+		/>
+
+	<ImageView
+		android:id="@+id/id_p_next"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerVertical="true"
+		android:layout_alignParentRight="true"
+	    android:scaleType="centerCrop"
+	    android:src="@mipmap/icon_p_search_next"
+		/>
+
+	<TextView
+		android:id="@+id/id_p_name"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:textColor="@color/color_text_33"
+		android:textSize="@dimen/common_text_size_16"
+		android:layout_marginLeft="@dimen/common_margin_10"
+		android:layout_marginRight="@dimen/common_margin_5"
+	    android:layout_toRightOf="@id/id_p_image"
+	    android:layout_toLeftOf="@id/id_p_next"
+	    android:singleLine="true"
+	    android:ellipsize="end"
+		/>
+	<TextView
+		android:id="@+id/id_p_desc"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:textColor="@color/color_text_66"
+		android:textSize="@dimen/common_text_size_14"
+	    android:layout_alignLeft="@id/id_p_name"
+	    android:layout_alignRight="@id/id_p_name"
+	    android:layout_below="@id/id_p_name"
+	    android:layout_marginTop="@dimen/common_margin_4"
+	    android:maxLines="2"
+	    android:ellipsize="end"
+		/>
+	
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="0.5dp"
+		android:background="@color/color_text_99"
+		android:layout_below="@id/id_p_image"
+		android:layout_marginTop="@dimen/common_margin_10"
+		android:alpha="0.5"/>
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:id="@+id/id_container"
+	android:animateLayoutChanges="true"
+	>
+
+
+
+		<ImageView
+			android:id="@+id/id_p_image"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_gravity="center"
+			android:src="@mipmap/defaults_pic"
+		    android:scaleType="centerCrop"
+			/>
+
+		<ImageView
+			android:id="@+id/id_p_image_left"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@mipmap/icon_p_add_image_left"/>
+
+
+
+
+	<ImageView
+		android:id="@+id/id_p_delete"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="top|right"
+		android:src="@mipmap/icon_p_delete"
+		/>
+
+
+
+</FrameLayout>

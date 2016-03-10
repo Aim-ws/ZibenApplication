@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+	android:id="@+id/id_my_gold"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:layout_marginBottom="30dp"
+		android:layout_marginLeft="@dimen/common_margin_15"
+		android:layout_marginRight="@dimen/common_margin_15"
+		android:paddingTop="150dp"
+		android:layout_marginTop="30dp"
+		android:background="@drawable/ic_bg_gold"
+		android:orientation="vertical">
+
+
+		<TextView
+			android:id="@+id/id_tag_1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"
+			android:text="当前排行"
+			android:textColor="@color/color_text_33"
+			android:textSize="@dimen/common_text_size_18"/>
+
+		<TextView
+			android:id="@+id/id_ranking_num"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"
+			android:layout_marginTop="@dimen/common_margin_10"
+			android:textColor="@color/color_gold"
+			android:textSize="@dimen/common_text_size_22"
+			/>
+
+		<TextView
+			android:id="@+id/id_total_gold"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"
+			android:layout_marginTop="@dimen/common_margin_10"
+			android:textColor="@color/color_text_66"
+			android:textSize="@dimen/common_text_size_16"
+			/>
+
+		<TextView
+			android:id="@+id/id_day_gold"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"
+			android:layout_marginTop="@dimen/common_margin_2"
+			android:textColor="@color/color_text_66"
+			android:textSize="@dimen/common_text_size_16"
+			/>
+
+
+		<TextView
+			android:id="@+id/id_rule_gold"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="left|bottom"
+			android:layout_marginTop="60dp"
+			android:text="金币规则"
+			android:textColor="#71aae8"
+			android:textSize="@dimen/common_text_size_16"
+		    android:layout_marginLeft="60dp"
+			/>
+
+
+	</LinearLayout>
+
+</FrameLayout>

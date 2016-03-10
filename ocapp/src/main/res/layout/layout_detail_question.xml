@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:padding="@dimen/common_margin_5"
+	android:orientation="vertical">
+
+	<TextView
+		android:id="@+id/id_p_question_word"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textSize="@dimen/common_text_size_16"
+		android:textColor="@color/colorAppbar"
+		android:text="@string/p_recommend_word"/>
+
+
+	<!--
+
+	<com.ziben365.ocapp.widget.AppListView
+		android:id="@+id/id_p_question_listView"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:scrollbars="none"
+		android:divider="@android:color/transparent"
+		android:layout_marginTop="@dimen/common_margin_5"/>
+
+		-->
+
+	<!--
+	<android.support.v7.widget.RecyclerView
+		android:id="@+id/id_p_q_recyclerView"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"/>
+		-->
+
+	<TextView
+		android:id="@+id/id_p_question_content"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:textColor="@color/color_text_66"
+		android:textSize="@dimen/common_text_size_16"
+		android:layout_marginTop="@dimen/common_margin_5"
+	    android:maxLines="3"
+	    android:ellipsize="end"
+		/>
+
+
+	<RelativeLayout
+		android:id="@+id/id_p_down_layout"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/common_margin_17">
+
+		<TextView
+			android:id="@+id/id_tv_down"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:drawableBottom="@mipmap/icon_p_down"
+			android:text="@string/p_down"
+			android:textSize="@dimen/common_text_size_12"
+			android:gravity="center"
+			android:drawablePadding="@dimen/common_margin_2"
+			android:paddingBottom="@dimen/common_margin_1"
+			android:paddingTop="@dimen/common_margin_1"
+			android:paddingLeft="@dimen/common_margin_3"
+			android:paddingRight="@dimen/common_margin_3"
+			android:textColor="#afafaf"
+			/>
+
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/common_margin_1"
+			android:background="#d2d2d2"
+			android:layout_centerVertical="true"
+			android:layout_toLeftOf="@id/id_tv_down"
+			android:layout_marginRight="@dimen/common_margin_15"
+			/>
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/common_margin_1"
+			android:background="#d2d2d2"
+			android:layout_centerVertical="true"
+			android:layout_toRightOf="@id/id_tv_down"
+			android:layout_marginLeft="@dimen/common_margin_15"
+			/>
+
+	</RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:detail="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+    android:background="@color/white"
+	>
+
+	<android.support.design.widget.CoordinatorLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_above="@+id/id_bottom_btn"
+		android:fitsSystemWindows="true">
+
+		<android.support.design.widget.AppBarLayout
+			android:id="@+id/appbar_layout"
+			android:layout_width="match_parent"
+			android:layout_height="350dp"
+			android:fitsSystemWindows="true"
+			android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+			<android.support.design.widget.CollapsingToolbarLayout
+				android:id="@+id/collapsing_toolbar_layout"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:fitsSystemWindows="true"
+				detail:contentScrim="?attr/colorPrimary"
+				detail:expandedTitleMarginEnd="64dp"
+				detail:expandedTitleMarginStart="48dp"
+				detail:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+
+				<ImageView
+					android:id="@+id/back_icon"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:fitsSystemWindows="true"
+					android:scaleType="centerCrop"
+					android:src="@mipmap/bg"
+					detail:layout_collapseMode="parallax"
+					detail:layout_collapseParallaxMultiplier="0.7"
+					/>
+
+				<android.support.v7.widget.Toolbar
+					android:id="@+id/toolbar"
+					android:layout_width="match_parent"
+					android:layout_height="?attr/actionBarSize"
+					android:background="@android:color/transparent"
+					android:layoutMode="clipBounds"
+					detail:layout_collapseMode="pin"
+					detail:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+					>
+
+				</android.support.v7.widget.Toolbar>
+			</android.support.design.widget.CollapsingToolbarLayout>
+		</android.support.design.widget.AppBarLayout>
+
+
+		<com.ziben365.ocapp.widget.refresh.recycler.RefreshRecyclerView
+			android:id="@+id/id_refresh_recyclerView"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:fillViewport="true"
+			detail:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+
+	</android.support.design.widget.CoordinatorLayout>
+
+     <com.ziben365.ocapp.widget.detector.FabArcMenuView
+	     android:id="@+id/id_arcMenuView"
+	     android:layout_width="300dp"
+	     android:layout_height="300dp"
+	     android:layout_gravity="bottom|right"
+	     android:layout_marginRight="@dimen/common_margin_10"
+	     android:layout_marginBottom="@dimen/common_margin_25"
+	     detail:position="right_bottom"
+	     detail:radius="150dp">
+
+	     <ImageView
+		     android:id="@+id/id_tab_1"
+		     android:layout_width="60dp"
+		     android:layout_height="60dp"
+		     android:src="@mipmap/icon_p_right_add"/>
+	     <ImageView
+		     android:id="@+id/id_tab_2"
+		     android:layout_width="50dp"
+		     android:layout_height="50dp"
+		     android:src="@mipmap/icon_p_share"/>
+	     <ImageView
+		     android:id="@+id/id_tab_3"
+		     android:layout_width="50dp"
+		     android:layout_height="50dp"
+		     android:src="@mipmap/icon_p_comment"/>
+	     <ImageView
+		     android:id="@+id/id_tab_4"
+		     android:layout_width="50dp"
+		     android:layout_height="50dp"
+		     android:src="@mipmap/icon_p_like"/>
+	     <ImageView
+		     android:id="@+id/id_tab_5"
+		     android:layout_width="50dp"
+		     android:layout_height="50dp"
+		     android:src="@mipmap/icon_p_praise"/>
+	     <ImageView
+		     android:id="@+id/id_tab_6"
+		     android:layout_width="50dp"
+		     android:layout_height="50dp"
+		     android:src="@mipmap/icon_p_add"/>
+
+
+     </com.ziben365.ocapp.widget.detector.FabArcMenuView>
+	
+
+</FrameLayout>

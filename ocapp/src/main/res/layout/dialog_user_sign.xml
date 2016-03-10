@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+    android:gravity="center"
+	>
+
+	<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/shape_sign_bg"
+		android:gravity="center_horizontal"
+		android:layout_gravity="center"
+		android:orientation="vertical">
+
+		<TextView
+			android:id="@+id/id_user_sign_title"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="25dp"
+			android:layout_gravity="center_horizontal"
+			android:text="@string/sign_title"
+			android:textColor="@color/colorAppbar"
+			android:textSize="32sp"
+			android:textStyle="bold"
+			/>
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/common_margin_10">
+
+
+			<TextView
+				android:id="@+id/id_user_sign_date"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerInParent="true"
+				android:textColor="@color/colorAppbar"
+				android:textSize="@dimen/common_text_size_18"
+			    android:text="首次登陆送金币"
+				/>
+
+			<View
+				android:layout_width="150dp"
+				android:layout_height="0.5dp"
+			    android:layout_centerVertical="true"
+				android:layout_toLeftOf="@id/id_user_sign_date"
+				android:layout_marginRight="@dimen/common_margin_10"
+				android:layout_marginLeft="@dimen/common_margin_5"
+				android:background="@color/colorAppbar"
+				/>
+
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="0.5dp"
+				android:layout_centerVertical="true"
+				android:layout_toRightOf="@id/id_user_sign_date"
+				android:layout_marginRight="@dimen/common_margin_5"
+				android:layout_marginLeft="@dimen/common_margin_10"
+				android:background="@color/colorAppbar"
+				/>
+		</RelativeLayout>
+
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/common_margin_15"
+		    android:src="@mipmap/ic_user_sign_gold"
+		    android:layout_gravity="center_horizontal"
+			/>
+
+		<TextView
+			android:id="@+id/id_user_sign_gold"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="15dp"
+			android:layout_gravity="center_horizontal"
+			android:text="获得金币5枚"
+			android:textColor="@color/colorAppbar"
+			android:textSize="32sp"
+			/>
+
+		<TextView
+			android:id="@+id/id_user_sign_next"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:textColor="@color/colorAppbar"
+			android:textSize="@dimen/common_text_size_18"
+			android:layout_marginTop="@dimen/common_margin_5"
+			android:text="明天连续签到可获得6金币"
+			/>
+
+		<TextView
+			android:id="@+id/id_user_sign_btn"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/shape_sign_bg_btn"
+			android:paddingLeft="50dp"
+			android:paddingRight="50dp"
+			android:paddingTop="@dimen/common_margin_10"
+			android:paddingBottom="@dimen/common_margin_10"
+			android:layout_marginTop="@dimen/common_margin_15"
+			android:textColor="@color/white"
+			android:text="签到"
+			android:textSize="@dimen/common_text_size_20"
+			android:layout_marginBottom="30dp"/>
+
+
+	</LinearLayout>
+
+
+</FrameLayout>
+
+

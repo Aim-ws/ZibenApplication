@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:background="@color/white"
+	android:gravity="center"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:padding="@dimen/common_margin_10"
+		android:orientation="horizontal">
+
+
+		<com.ziben365.ocapp.widget.wheel.view.WheelView
+			android:id="@+id/id_province_wheelView"
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:layout_height="wrap_content"
+			/>
+		<com.ziben365.ocapp.widget.wheel.view.WheelView
+			android:id="@+id/id_city_wheelView"
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:layout_height="wrap_content"
+			/>
+
+	</LinearLayout>
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/common_margin_1"
+	    android:background="@color/gray"/>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="@dimen/common_margin_2"
+
+		>
+		<View
+			android:id="@+id/id_line"
+			android:layout_width="@dimen/common_margin_1"
+			android:layout_centerInParent="true"
+			android:layout_height="wrap_content"
+			android:layout_alignBottom="@+id/id_cancel"
+			android:background="@color/gray"/>
+
+		<TextView
+			android:id="@+id/id_cancel"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="@dimen/common_margin_12"
+			android:layout_toLeftOf="@id/id_line"
+			android:textColor="@color/colorAppbar"
+			android:textSize="@dimen/common_text_size_16"
+			android:gravity="center"
+			android:text="@string/cancel"/>
+
+		<TextView
+			android:id="@+id/id_ok"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="@dimen/common_margin_12"
+			android:layout_toRightOf="@id/id_line"
+			android:textColor="@color/colorAppbar"
+			android:textSize="@dimen/common_text_size_16"
+			android:gravity="center"
+			android:text="@string/ok"/>
+	</RelativeLayout>
+
+</LinearLayout>
